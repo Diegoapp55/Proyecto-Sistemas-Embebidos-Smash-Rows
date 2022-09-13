@@ -323,7 +323,11 @@
     ],
     [
       "3dc66758-7067-4285-a03f-e9474bf12d83",
-      "Power"
+      "Potencia"
+    ],
+    [
+      "e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a",
+      "Motores"
     ]
   ],
   "text_variables": {}
