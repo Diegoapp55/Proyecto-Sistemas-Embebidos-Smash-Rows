@@ -332,6 +332,10 @@
     [
       "80dbd6db-b9cc-42d5-a40e-8d2c99f93a1b",
       "RFID"
+    ],
+    [
+      "befd95e3-f29f-4265-b7f4-12932b391cda",
+      "Modo Programación"
     ]
   ],
   "text_variables": {}
