@@ -310,7 +310,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../../../../../../Descargas/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -335,7 +335,7 @@
     ],
     [
       "befd95e3-f29f-4265-b7f4-12932b391cda",
-      "Modo Programación"
+      "Principal"
     ]
   ],
   "text_variables": {}
