@@ -917,6 +917,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 91205fac-ade4-478f-9abb-fea5bfea1234)
   )
+  (text "NOTA: Este es un concepto inspirado en el módulo para arduino con TLP281"
+    (at 53.34 133.35 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid aec7050d-84e5-422f-8547-44d859f8d907)
+  )
   (text "No entiendo bien por que se supone que este componente contiene"
     (at 53.34 128.27 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
