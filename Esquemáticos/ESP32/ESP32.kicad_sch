@@ -408,9 +408,6 @@
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/a90ebcb0-52d5-4b3f-b94a-f8cfc528c128"
       (reference "J2") (unit 1) (value "Conector para bobinas del motor 2") (footprint "")
     )
-    (path "/80dbd6db-b9cc-42d5-a40e-8d2c99f93a1b/3471c47f-a636-4058-83f1-2e9cb217714f"
-      (reference "J?") (unit 1) (value "Conn_RFID_SPI") (footprint "")
-    )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/3bfbda56-f099-48ac-9c38-9e68bde3f6eb"
       (reference "J?") (unit 1) (value "Barrel_Jack") (footprint "")
     )
@@ -530,6 +527,9 @@
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/2a82bfea-d6da-4e15-be41-8f0d0564fbe8"
       (reference "U1") (unit 1) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
+    )
+    (path "/80dbd6db-b9cc-42d5-a40e-8d2c99f93a1b/394a10b6-843f-4b70-a0d6-062d343408fc"
+      (reference "U1") (unit 1) (value "RFID_RC522") (footprint "")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/5bf74cd1-a962-4bbd-9f53-d2bee3f6a861"
       (reference "U1") (unit 1) (value "ULN2003A") (footprint "")
