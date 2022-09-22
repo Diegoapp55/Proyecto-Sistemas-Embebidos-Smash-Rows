@@ -194,7 +194,7 @@
     (property "Value" "RFID_RC522" (id 1) (at 163.83 104.1399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 149.86 93.98 0)
+    (property "Footprint" "Library_raul:RFID_RC522" (id 2) (at 149.86 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 149.86 93.98 0)
