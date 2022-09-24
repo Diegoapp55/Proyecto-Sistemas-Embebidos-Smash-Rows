@@ -538,7 +538,7 @@
       (reference "SW_EN") (unit 1) (value "SW_Push") (footprint "")
     )
     (path "/80dbd6db-b9cc-42d5-a40e-8d2c99f93a1b/394a10b6-843f-4b70-a0d6-062d343408fc"
-      (reference "U1") (unit 1) (value "RFID_RC522") (footprint "Library_raul:RFID_RC522")
+      (reference "U1") (unit 1) (value "RFID_RC522") (footprint "Connector_JST:JST_EH_B8B-EH-A_1x08_P2.50mm_Vertical")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/03b7f5b4-61d1-4709-84d5-d56ce7c876ef"
       (reference "U?") (unit 1) (value "ULN2003A") (footprint "")
