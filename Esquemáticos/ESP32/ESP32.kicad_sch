@@ -366,14 +366,14 @@
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/05fbffb2-bb5e-4825-b477-aa4b977ae748"
       (reference "#PWR013") (unit 1) (value "GND") (footprint "")
     )
-    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/1cab705a-14ca-4839-8f4d-9c717f117684"
-      (reference "#PWR014") (unit 1) (value "GND") (footprint "")
-    )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/db0a8391-d8a7-4324-ab5c-5adf89c2b810"
       (reference "#PWR015") (unit 1) (value "GND") (footprint "")
     )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/4216f8c6-20cc-4f59-801e-ac7aa152e92e"
       (reference "#PWR016") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/3dc66758-7067-4285-a03f-e9474bf12d83/d210962d-b1df-43af-a76b-6bb2bac7b1bd"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/35f6f34f-ab08-49d3-88cd-2b29ce32909b"
       (reference "C1") (unit 1) (value "100n") (footprint "")
@@ -405,14 +405,14 @@
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/f801dc06-14a2-40fc-b35e-771c6f7fd548"
       (reference "C_EN1") (unit 1) (value "100nF") (footprint "")
     )
-    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/87675d80-ff03-4f90-bf4f-67f095635ace"
-      (reference "D1") (unit 1) (value "Led_operacion") (footprint "LED_SMD:LED_1206_3216Metric")
-    )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/65e36531-d883-4f79-bd86-397404361177"
       (reference "D2") (unit 1) (value "Led_holamundo") (footprint "LED_SMD:LED_1206_3216Metric")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/431dc400-d7d7-498f-82b4-fd1ff1475059"
       (reference "D3") (unit 1) (value "1N4007") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+    )
+    (path "/3dc66758-7067-4285-a03f-e9474bf12d83/70df758b-7585-4ec2-9945-ffbb748bcfa0"
+      (reference "D?") (unit 1) (value "Led_ON") (footprint "LED_SMD:LED_1206_3216Metric")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/8c42d1b8-7814-404f-b05a-ed16e7f83cd3"
       (reference "J1") (unit 1) (value "Conector para bobinas del motor 1") (footprint "Connector_JST:JST_AUH_BM05B-AUHKS-GA-TB_1x05-1MP_P1.50mm_Vertical")
