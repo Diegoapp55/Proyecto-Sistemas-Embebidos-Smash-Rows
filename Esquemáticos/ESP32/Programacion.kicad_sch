@@ -911,11 +911,6 @@
     (uuid fecff22c-4e4c-4386-9e9c-32793c479b74)
   )
 
-  (text "Habría que cambiar los valores de las resistencias para que funcionen los LEDs, ver archivo de multisim"
-    (at 171.45 96.52 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 6f184543-1b98-4437-a58d-a8acb4e45fe0)
-  )
   (text "Ponerle condensadores de bypass a la entrada del ESP32 para eliminar armónicos de las señales múltiples que se trabajen\n"
     (at 29.21 44.45 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1275,7 +1270,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e30690a4-66e5-4d57-a707-b43d3ee6e681)
     (property "Reference" "R28" (id 0) (at 116.84 106.68 90))
-    (property "Value" "10k" (id 1) (at 116.84 109.22 90))
+    (property "Value" "56" (id 1) (at 116.84 109.22 90))
     (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (id 2) (at 116.84 114.808 90)
       (effects (font (size 1.27 1.27)) hide)
     )

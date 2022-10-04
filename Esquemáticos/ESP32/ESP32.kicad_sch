@@ -161,6 +161,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 649b1813-f6b4-48de-b3e0-f3d0f3cb26db)
   )
+  (text "Rta/ yo no lo ocupo, no sé si alguien si\n-Raúl\n" (at 156.21 109.22 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid d74189fa-afad-47ac-b458-f9a202528dab)
+  )
 
   (sheet (at 71.12 102.87) (size 29.21 21.59) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
@@ -580,7 +584,10 @@
       (reference "R27") (unit 1) (value "10k") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
     )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/e30690a4-66e5-4d57-a707-b43d3ee6e681"
-      (reference "R28") (unit 1) (value "10k") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
+      (reference "R28") (unit 1) (value "56") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
+    )
+    (path "/3dc66758-7067-4285-a03f-e9474bf12d83/dcf91bd7-bd3a-4623-adf2-7cfee1fb67ef"
+      (reference "R29") (unit 1) (value "56") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
     )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/4989dbdc-323d-4a36-967e-1585d6ae2f13"
       (reference "RRX1") (unit 1) (value "R") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
