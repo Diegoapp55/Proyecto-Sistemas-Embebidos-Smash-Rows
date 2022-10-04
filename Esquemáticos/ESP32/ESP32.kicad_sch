@@ -382,22 +382,22 @@
       (reference "C2") (unit 1) (value "100n") (footprint "")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/8366b169-cbca-404f-9d87-2ec55501bfcf"
-      (reference "C10") (unit 1) (value "100nF") (footprint "")
+      (reference "C10") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/bf7f2c90-eba3-41bc-8bb7-6527d6c3e616"
       (reference "C11") (unit 1) (value "1000uF") (footprint "")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/35757699-5847-498b-b6a1-61227cbb8601"
-      (reference "C12") (unit 1) (value "10uF") (footprint "")
+      (reference "C12") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/203cf750-2989-471a-bb16-ddd8532d9e68"
-      (reference "C13") (unit 1) (value "22uF") (footprint "")
+      (reference "C13") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/81026734-16a9-4db0-99fa-42da3128ed6a"
-      (reference "C14") (unit 1) (value "22u") (footprint "")
+      (reference "C14") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/526b5ff6-ccf9-408f-b421-b9569d546d20"
-      (reference "C15") (unit 1) (value "22u") (footprint "")
+      (reference "C15") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/f4ced309-8a4f-4567-8c19-6fc7db333573"
       (reference "C_BOOT1") (unit 1) (value "100nF") (footprint "")
