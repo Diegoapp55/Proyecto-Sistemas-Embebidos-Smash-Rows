@@ -418,7 +418,7 @@
       (reference "J1") (unit 1) (value "Conector para bobinas del motor 1") (footprint "Connector_JST:JST_AUH_BM05B-AUHKS-GA-TB_1x05-1MP_P1.50mm_Vertical")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/b397f504-3e38-4c8a-a91e-c34f0804c947"
-      (reference "J2") (unit 1) (value "Conector para bobinas del motor 2") (footprint "")
+      (reference "J2") (unit 1) (value "Conector para bobinas del motor 2") (footprint "Connector_JST:JST_AUH_BM05B-AUHKS-GA-TB_1x05-1MP_P1.50mm_Vertical")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/3bfbda56-f099-48ac-9c38-9e68bde3f6eb"
       (reference "J3") (unit 1) (value "Barrel_Jack") (footprint "Connector_BarrelJack:BarrelJack_CLIFF_FC681465S_SMT_Horizontal")
@@ -532,10 +532,10 @@
       (reference "SW1") (unit 1) (value "SW_DIP_x01") (footprint "")
     )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/60112263-6c7f-4d3e-b0bc-587a78d9e19b"
-      (reference "SW_BOOT1") (unit 1) (value "SW_Push") (footprint "")
+      (reference "SW_BOOT1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_TL3305A")
     )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/780d63a1-cbe5-4412-8d41-ae59586b3ed1"
-      (reference "SW_EN1") (unit 1) (value "SW_Push") (footprint "")
+      (reference "SW_EN1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_TL3305A")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/cce4eac4-43c7-4249-8539-9241b837a684"
       (reference "U1") (unit 1) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")

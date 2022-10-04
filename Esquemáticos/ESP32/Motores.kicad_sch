@@ -2540,7 +2540,7 @@
     (property "Value" "Conector para bobinas del motor 2" (id 1) (at 232.41 118.1099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 229.87 115.57 0)
+    (property "Footprint" "Connector_JST:JST_AUH_BM05B-AUHKS-GA-TB_1x05-1MP_P1.50mm_Vertical" (id 2) (at 229.87 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 229.87 115.57 0)
