@@ -685,6 +685,8 @@
     (uuid d039b00e-27d5-4578-a15e-2325d40c393b)
   )
 
+  (no_connect (at 64.77 102.87) (uuid 3f073e47-5b59-4b5b-a4c9-3c7c986d0ed0))
+
   (wire (pts (xy 182.88 104.14) (xy 207.01 104.14))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 0469010d-b4a4-49f1-bbc0-047dae17f739)
@@ -780,6 +782,11 @@
   (polyline (pts (xy 50.8 69.85) (xy 52.07 69.85))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 686e2036-af61-4dea-9860-0f5d8f1de864)
+  )
+
+  (wire (pts (xy 64.77 102.87) (xy 64.77 99.06))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 7069bd9a-6908-4f20-8ddb-9c82107a49c5)
   )
   (polyline (pts (xy 219.71 153.67) (xy 219.71 69.85))
     (stroke (width 0) (type default) (color 0 0 0 0))

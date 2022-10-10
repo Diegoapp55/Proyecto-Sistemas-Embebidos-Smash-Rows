@@ -461,10 +461,10 @@
       (reference "D3") (unit 1) (value "1N4007") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/8c42d1b8-7814-404f-b05a-ed16e7f83cd3"
-      (reference "J1") (unit 1) (value "Conector para bobinas del motor 1") (footprint "Connector_JST:JST_AUH_BM05B-AUHKS-GA-TB_1x05-1MP_P1.50mm_Vertical")
+      (reference "J1") (unit 1) (value "Conector para bobinas del motor 1") (footprint "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/b397f504-3e38-4c8a-a91e-c34f0804c947"
-      (reference "J2") (unit 1) (value "Conector para bobinas del motor 2") (footprint "Connector_JST:JST_AUH_BM05B-AUHKS-GA-TB_1x05-1MP_P1.50mm_Vertical")
+      (reference "J2") (unit 1) (value "Conector para bobinas del motor 2") (footprint "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/3bfbda56-f099-48ac-9c38-9e68bde3f6eb"
       (reference "J3") (unit 1) (value "Barrel_Jack") (footprint "Connector_BarrelJack:BarrelJack_CLIFF_FC681465S_SMT_Horizontal")
