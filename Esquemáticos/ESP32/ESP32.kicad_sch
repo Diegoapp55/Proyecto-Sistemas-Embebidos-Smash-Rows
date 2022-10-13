@@ -446,10 +446,10 @@
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/32334ac5-664d-4901-8e51-fa7fc73d5e28"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/bd6b0224-495a-4509-831e-4eeb41ad6ff3"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/35f6f34f-ab08-49d3-88cd-2b29ce32909b"
       (reference "C1") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
@@ -509,7 +509,7 @@
       (reference "J3") (unit 1) (value "Barrel_Jack") (footprint "Connector_BarrelJack:BarrelJack_CLIFF_FC681465S_SMT_Horizontal")
     )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/3c6255da-d7f6-4922-afe8-3594d68a1ce8"
-      (reference "J4") (unit 1) (value "USB Programador") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical")
+      (reference "J4") (unit 1) (value "USB Programador") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/afba1bdf-2e39-4bb1-b010-78c7728549d2"
       (reference "Q1") (unit 1) (value "S8550") (footprint "Package_TO_SOT_SMD:TSOT-23")
