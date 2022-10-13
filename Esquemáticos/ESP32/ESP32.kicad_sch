@@ -451,11 +451,20 @@
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/bd6b0224-495a-4509-831e-4eeb41ad6ff3"
       (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
+    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/60112263-6c7f-4d3e-b0bc-587a78d9e19b"
+      (reference "BOOT1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_TL3305A")
+    )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/35f6f34f-ab08-49d3-88cd-2b29ce32909b"
       (reference "C1") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/1b7a0d1b-acce-4b00-96c3-f8a1088054bf"
       (reference "C2") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+    )
+    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/f801dc06-14a2-40fc-b35e-771c6f7fd548"
+      (reference "C3") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+    )
+    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/f4ced309-8a4f-4567-8c19-6fc7db333573"
+      (reference "C4") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/bf7f2c90-eba3-41bc-8bb7-6527d6c3e616"
       (reference "C11") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
@@ -472,12 +481,6 @@
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/526b5ff6-ccf9-408f-b421-b9569d546d20"
       (reference "C15") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
-    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/f4ced309-8a4f-4567-8c19-6fc7db333573"
-      (reference "C_BOOT1") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
-    )
-    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/f801dc06-14a2-40fc-b35e-771c6f7fd548"
-      (reference "C_RST1") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
-    )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/70df758b-7585-4ec2-9945-ffbb748bcfa0"
       (reference "D1") (unit 1) (value "Led_ON") (footprint "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
@@ -486,6 +489,9 @@
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/431dc400-d7d7-498f-82b4-fd1ff1475059"
       (reference "D3") (unit 1) (value "1N4007") (footprint "Diode_SMD:D_SMA_Handsoldering")
+    )
+    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/780d63a1-cbe5-4412-8d41-ae59586b3ed1"
+      (reference "EN1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_TL3305A")
     )
     (path "/b2eae9bb-87e0-4291-9c75-9d60b3b2102b"
       (reference "H1") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.5mm")
@@ -630,12 +636,6 @@
     )
     (path "/3dc66758-7067-4285-a03f-e9474bf12d83/fa8d288c-f2c8-4f4c-a102-95fabf0e9475"
       (reference "SW1") (unit 1) (value "SW_DIP_x01") (footprint "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin")
-    )
-    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/60112263-6c7f-4d3e-b0bc-587a78d9e19b"
-      (reference "SW_BOOT1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_TL3305A")
-    )
-    (path "/befd95e3-f29f-4265-b7f4-12932b391cda/780d63a1-cbe5-4412-8d41-ae59586b3ed1"
-      (reference "SW_RST1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_TL3305A")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/cce4eac4-43c7-4249-8539-9241b837a684"
       (reference "U1") (unit 1) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
