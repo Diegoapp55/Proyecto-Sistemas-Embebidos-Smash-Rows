@@ -1,0 +1,184 @@
+
+(rules PCB ESP32New
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 103)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 1300.0)
+    (clear 300.2)
+    (clear 200.0 (type smd_to_turn_gap))
+    (clear 75.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_500:300_um"
+    (shape
+      (circle F.Cu 500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1400:500_um"
+    (shape
+      (circle F.Cu 1400.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1400.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_500:300_um" "Via[0-1]_500:300_um" default
+  )
+  (via 
+    "Via[0-1]_1400:500_um" "Via[0-1]_1400:500_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_500:300_um-kicad_default" "Via[0-1]_500:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1400:500_um-kicad_default" "Via[0-1]_1400:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_500:300_um-Power 12V" "Via[0-1]_500:300_um" "Power 12V"
+  )
+  (via 
+    "Via[0-1]_1400:500_um-Power 12V" "Via[0-1]_1400:500_um" "Power 12V"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power 12V" "Via[0-1]_800:400_um" "Power 12V"
+  )
+  (via 
+    "Via[0-1]_500:300_um-Power 3V3" "Via[0-1]_500:300_um" "Power 3V3"
+  )
+  (via 
+    "Via[0-1]_1400:500_um-Power 3V3" "Via[0-1]_1400:500_um" "Power 3V3"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power 3V3" "Via[0-1]_800:400_um" "Power 3V3"
+  )
+  (via 
+    "Via[0-1]_500:300_um-Signals" "Via[0-1]_500:300_um" Signals
+  )
+  (via 
+    "Via[0-1]_1400:500_um-Signals" "Via[0-1]_1400:500_um" Signals
+  )
+  (via 
+    "Via[0-1]_800:400_um-Signals" "Via[0-1]_800:400_um" Signals
+  )
+  (via_rule
+    default "Via[0-1]_500:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_500:300_um-kicad_default"
+  )
+  (via_rule
+    "Power 12V" "Via[0-1]_1400:500_um-Power 12V"
+  )
+  (via_rule
+    "Power 3V3" "Via[0-1]_800:400_um-Power 3V3"
+  )
+  (via_rule
+    Signals "Via[0-1]_500:300_um-Signals"
+  )
+  (class default
+    GND "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(J1-Pad2)" "Net-(J1-Pad3)" "Net-(J1-Pad4)" "Net-(J2-Pad2)" "Net-(J2-Pad3)"
+    "Net-(J2-Pad4)" "Net-(Q1-Pad2)" "Net-(Q2-Pad2)" "Net-(Q3-Pad2)" "Net-(Q4-Pad2)" "Net-(Q5-Pad2)" "Net-(Q6-Pad2)" "Net-(Q7-Pad2)"
+    "Net-(Q8-Pad2)" "Net-(R5-Pad2)" "Net-(R6-Pad2)" "Net-(R7-Pad2)" "Net-(R8-Pad2)" "Net-(R17-Pad2)" "Net-(R18-Pad2)" "Net-(R19-Pad2)"
+    "Net-(R20-Pad2)" "Net-(BOOT1-Pad2)" /Principal/HelloWorld /Principal/RX /Principal/TX "unconnected-(U3-Pad5)" "unconnected-(U3-Pad6)" "unconnected-(U3-Pad7)"
+    "unconnected-(U3-Pad10)" "unconnected-(U3-Pad11)" "unconnected-(U3-Pad12)" "unconnected-(U4-Pad5)" "unconnected-(U4-Pad6)" "unconnected-(U4-Pad7)" "unconnected-(U4-Pad10)" "unconnected-(U4-Pad11)"
+    "unconnected-(U4-Pad12)" "unconnected-(U7-Pad4)" "unconnected-(U7-Pad5)" "unconnected-(U7-Pad6)" "unconnected-(U7-Pad7)" "unconnected-(U7-Pad17)" "unconnected-(U7-Pad18)" "unconnected-(U7-Pad19)"
+    "unconnected-(U7-Pad20)" "unconnected-(U7-Pad21)" "unconnected-(U7-Pad22)" "unconnected-(U7-Pad24)" "unconnected-(U7-Pad26)" "unconnected-(U7-Pad27)" "unconnected-(U7-Pad28)" "unconnected-(U7-Pad32)"
+    "unconnected-(U7-Pad33)" "unconnected-(U8-Pad5)" "Net-(J1-Pad5)" "Net-(J2-Pad5)" "unconnected-(JP1-Pad1)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 1300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "Power 12V"
+    +12V "Net-(D3-Pad2)" "Net-(J3-Pad1)"
+    (clearance_class "Power 12V")
+    (via_rule Power 12V)
+    (rule
+      (width 1300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "Power 3V3"
+    +5V +3.3V
+    (clearance_class "Power 3V3")
+    (via_rule Power 3V3)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Signals
+    /Principal/BOOT /Principal/EN{slash}RST /Motores/Out1 /Motores/Out2 /Motores/Out3 /Motores/Out4 /Motores/Out5 /Motores/Out6
+    /Motores/Out7 /Motores/Out8 /Motores/In1 /Motores/In2 /Motores/In3 /Motores/In4 /Motores/In5 /Motores/In6
+    /Motores/In7 /Motores/In8 /Principal/SS /Principal/SCK /Principal/MISO /Principal/RST /Principal/MOSI
+    (clearance_class Signals)
+    (via_rule Signals)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

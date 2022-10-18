@@ -422,12 +422,6 @@
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/644d1bcb-d347-432b-b272-4dbd0eaad95c"
       (reference "#PWR026") (unit 1) (value "+5V") (footprint "")
     )
-    (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/7358c757-caa5-4b1a-881b-6f6e655f1132"
-      (reference "#PWR027") (unit 1) (value "+12V") (footprint "")
-    )
-    (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/c8deb676-1c9d-4cdc-ad18-a529b8065884"
-      (reference "#PWR028") (unit 1) (value "+12V") (footprint "")
-    )
     (path "/80dbd6db-b9cc-42d5-a40e-8d2c99f93a1b/792371f9-3751-47a4-8204-a7f3d09fe80b"
       (reference "#PWR029") (unit 1) (value "+3.3V") (footprint "")
     )
@@ -451,6 +445,12 @@
     )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/f809d876-eb9f-49d8-bcb7-820f760daef8"
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/0636aeeb-d94d-4e23-beb6-092bf27debdb"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/728f131e-c9a4-41d2-8a29-cc8c6066e06c"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
     )
     (path "/befd95e3-f29f-4265-b7f4-12932b391cda/60112263-6c7f-4d3e-b0bc-587a78d9e19b"
       (reference "BOOT1") (unit 1) (value "SW_Push") (footprint "Button_Switch_SMD:SW_SPST_B3S-1000")

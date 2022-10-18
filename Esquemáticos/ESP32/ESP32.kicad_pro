@@ -443,8 +443,10 @@
           "/Principal/MISO",
           "/Principal/MOSI",
           "/Principal/RST",
+          "/Principal/RX",
           "/Principal/SCK",
-          "/Principal/SS"
+          "/Principal/SS",
+          "/Principal/TX"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
