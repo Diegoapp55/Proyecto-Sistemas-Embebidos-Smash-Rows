@@ -639,28 +639,28 @@
       (reference "R29") (unit 1) (value "68") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/cce4eac4-43c7-4249-8539-9241b837a684"
-      (reference "U1") (unit 1) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
+      (reference "U1") (unit 1) (value "LTV-247") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/5a3eb3e8-1268-4630-bf01-bb4111bed611"
-      (reference "U1") (unit 2) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
+      (reference "U1") (unit 2) (value "LTV-247") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/1e5c9090-7292-4abc-ba12-948df7bfef93"
-      (reference "U1") (unit 3) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
+      (reference "U1") (unit 3) (value "LTV-247") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/4bd98c05-1e45-4f53-b767-69352649d33b"
-      (reference "U1") (unit 4) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
+      (reference "U1") (unit 4) (value "LTV-247") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/1862ada8-753b-41cc-9a37-f28b3108002a"
-      (reference "U2") (unit 1) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
+      (reference "U2") (unit 1) (value "LTV-247") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/1cf65a25-85e9-4834-a721-87b38f84d198"
-      (reference "U2") (unit 2) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
+      (reference "U2") (unit 2) (value "LTV-247") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/36f1a94b-6b66-4399-bce4-847d373c0cdc"
-      (reference "U2") (unit 3) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
+      (reference "U2") (unit 3) (value "LTV-247") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/ddcbd207-4be6-4b47-94a5-82f1b01769e9"
-      (reference "U2") (unit 4) (value "LTV-247") (footprint "Package_SO:SOP-16_4.4x10.4mm_P1.27mm")
+      (reference "U2") (unit 4) (value "LTV-247") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
     )
     (path "/e1e74fdb-71e2-41d9-bc36-66c7a8ec4b6a/34b92bc4-8724-444d-a655-2b42c79c8c18"
       (reference "U3") (unit 1) (value "ULN2003A") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
