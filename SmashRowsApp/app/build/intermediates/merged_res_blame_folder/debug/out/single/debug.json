@@ -12,6 +12,10 @@
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
+        "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/drawable-mdpi_exit.png.flat",
+        "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/drawable-mdpi/exit.png"
+    },
+    {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
     },
@@ -20,16 +24,12 @@
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/xml/backup_rules.xml"
     },
     {
-        "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.smashrows.app-merged_res-29:/drawable-mdpi_exit.png.flat",
-        "source": "com.example.smashrows.app-main-31:/drawable-mdpi/exit.png"
+        "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/layout_activity_main.xml.flat",
@@ -38,10 +38,6 @@
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.smashrows.app-merged_res-29:/drawable-mdpi_logo.jpg.flat",
-        "source": "com.example.smashrows.app-main-31:/drawable-mdpi/logo.jpg"
     },
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -70,6 +66,10 @@
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/drawable-mdpi_logo.jpg.flat",
+        "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/drawable-mdpi/logo.jpg"
     },
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
