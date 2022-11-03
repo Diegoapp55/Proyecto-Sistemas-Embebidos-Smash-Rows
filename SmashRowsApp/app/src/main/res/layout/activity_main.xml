@@ -17,7 +17,7 @@
         android:textColor="#331E38"
         android:layout_margin="10dp"
         android:padding="10dp"
-        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_bias="0.01"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,50 +30,61 @@
         android:hint="Ingrese su documento"
         android:layout_margin="10dp"
         android:gravity="center_horizontal"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintVertical_bias="0.1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/InsertDocument"/>
 
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="@id/Users"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/InsertDocument"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/Users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/round_button"
+        android:text="Usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EPS"
+        android:text="Escanear"
         android:gravity="center_horizontal"
         android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/Users"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/Scanner"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acerca de..."
+        android:gravity="center_horizontal"
+        android:background="@drawable/round_button"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/EPS"/>
-
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Usuario"
-        android:gravity="center_horizontal"
-        android:background="@drawable/round_button"
-        app:layout_constraintBottom_toBottomOf="@id/Distributor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/EPS"
-        android:id="@+id/Users"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Distribuidor"
-        android:gravity="center_horizontal"
-        android:background="@drawable/round_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Users"
-        android:id="@+id/Distributor"/>
+        android:id="@+id/AboutUs"/>
 
     <Button
         android:layout_width="wrap_content"
