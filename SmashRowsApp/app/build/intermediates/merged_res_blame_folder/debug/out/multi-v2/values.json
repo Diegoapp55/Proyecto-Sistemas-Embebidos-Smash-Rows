@@ -207,11 +207,11 @@
                 {
                     "source": "/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "10,9,-1,-1,-1,-1,11,-1,-1,-1",
-                        "startColumns": "4,4,-1,-1,-1,-1,4,-1,-1,-1",
-                        "startOffsets": "415,370,-1,-1,-1,-1,461,-1,-1,-1",
-                        "endColumns": "45,44,-1,-1,-1,-1,43,-1,-1,-1",
-                        "endOffsets": "456,410,-1,-1,-1,-1,500,-1,-1,-1"
+                        "startLines": "10,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "4,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "415,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endColumns": "45,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endOffsets": "456,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "607,608,613,837,838,839,846,851,852,855",
@@ -491,11 +491,11 @@
                 {
                     "source": "/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "10,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startColumns": "4,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startOffsets": "415,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endColumns": "45,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endOffsets": "456,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                        "startLines": "-1,9,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,4,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,370,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endColumns": "-1,44,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endOffsets": "-1,410,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "607,608,613,837,838,839,846,851,852,855",

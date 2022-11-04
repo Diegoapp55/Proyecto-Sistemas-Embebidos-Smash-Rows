@@ -48,6 +48,10 @@
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/drawable/round_button.xml"
     },
     {
+        "merged": "com.example.smashrows.app-merged_res-29:/drawable_round_button.xml.flat",
+        "source": "com.example.smashrows.app-main-31:/drawable/round_button.xml"
+    },
+    {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-hdpi/ic_launcher.webp"
     },
@@ -80,7 +84,7 @@
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.smashrows.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "com.example.smashrows.app-main-31:/layout/activity_main.xml"
+        "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/font_comic_neue_bold_italic.ttf.flat",
+        "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/font/comic_neue_bold_italic.ttf"
     }
 ]

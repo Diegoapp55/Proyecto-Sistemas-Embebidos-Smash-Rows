@@ -2645,6 +2645,7 @@ drawable round_button
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font comic_neue_bold_italic
 id ALT
 id AboutUs
 id BOTTOM_END
