@@ -1834,7 +1834,6 @@ int color secondary_text_default_material_dark 0x7f050253
 int color secondary_text_default_material_light 0x7f050254
 int color secondary_text_disabled_material_dark 0x7f050255
 int color secondary_text_disabled_material_light 0x7f050256
-int color steelblue 0x7f050264
 int color switch_thumb_disabled_material_dark 0x7f050257
 int color switch_thumb_disabled_material_light 0x7f050258
 int color switch_thumb_material_dark 0x7f050259
@@ -3325,6 +3324,7 @@ int layout select_dialog_multichoice_material 0x7f0b0064
 int layout select_dialog_singlechoice_material 0x7f0b0065
 int layout support_simple_spinner_dropdown_item 0x7f0b0066
 int mipmap ic_launcher 0x7f0d0000
+int mipmap ic_launcher_foreground 0x7f0d0002
 int mipmap ic_launcher_round 0x7f0d0001
 int plurals mtrl_badge_content_description 0x7f0e0000
 int string abc_action_bar_home_description 0x7f0f0000
