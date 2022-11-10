@@ -19,8 +19,7 @@
     /* ~/zephyrproject/zephyr/dts/bindings/gpio/gpio-leds.yaml */
     compatible = "gpio-leds";
     led_blue_label: led_blue_node {
-      gpios = <&
-gpio0 2 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
     };
   };
 };
