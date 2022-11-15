@@ -16,6 +16,8 @@ drawable logo
 drawable round_button
 font comic_neue_bold_italic
 id AboutUs
+id ButtonBackInsert
+id ButtonBackScanner
 id Exit
 id InsertDocument
 id MainTitle
@@ -23,6 +25,7 @@ id Scanner
 id Users
 layout activity_inser_document
 layout activity_main
+layout activity_scanner_document
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round

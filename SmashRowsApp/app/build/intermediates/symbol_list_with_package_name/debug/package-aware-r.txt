@@ -2649,6 +2649,8 @@ id ALT
 id AboutUs
 id BOTTOM_END
 id BOTTOM_START
+id ButtonBackInsert
+id ButtonBackScanner
 id CTRL
 id Exit
 id FUNCTION
@@ -3251,6 +3253,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_inser_document
 layout activity_main
+layout activity_scanner_document
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

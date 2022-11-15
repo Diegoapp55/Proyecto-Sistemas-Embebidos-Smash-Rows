@@ -71,6 +71,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
         android:gravity="center_horizontal"
+        android:onClick="aboutUs"
         android:text="Acerca de..."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

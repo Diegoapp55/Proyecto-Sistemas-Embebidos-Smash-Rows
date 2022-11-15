@@ -35,5 +35,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(scannerDocument);
     }
 
+    //Button Scanner Document --> Scanner Document Layout
+    public void aboutUs(View view){
+        Intent aboutUs = new Intent(this, AboutUs.class);
+        startActivity(aboutUs);
+    }
+
 
 }

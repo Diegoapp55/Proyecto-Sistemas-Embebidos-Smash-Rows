@@ -2648,6 +2648,8 @@ int id ALT 0x7f080000
 int id AboutUs 0x7f0801e3
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
+int id ButtonBackInsert 0x7f0801e5
+int id ButtonBackScanner 0x7f0801e6
 int id CTRL 0x7f080003
 int id Exit 0x7f0801e2
 int id FUNCTION 0x7f080004
@@ -3250,6 +3252,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_inser_document 0x7f0b0067
 int layout activity_main 0x7f0b001c
+int layout activity_scanner_document 0x7f0b0068
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
 int layout design_bottom_sheet_dialog 0x7f0b001f
