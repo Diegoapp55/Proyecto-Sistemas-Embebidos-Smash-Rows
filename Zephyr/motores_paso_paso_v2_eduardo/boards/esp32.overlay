@@ -13,16 +13,16 @@
   
   aliases {
     /*Motor 1*/
-    coil1 = &coil_1_label; 
-    coil2 = &coil_2_label;
-    coil3 = &coil_3_label;
-    coil4 = &coil_4_label;
+    coil1_alias = &coil_1_label; 
+    coil2_alias = &coil_2_label;
+    coil3_alias = &coil_3_label;
+    coil4_alias = &coil_4_label;
 
     /*Motor 2*/
-    coil5 = &coil_5_label; 
-    coil6 = &coil_6_label;
-    coil7 = &coil_7_label;
-    coil8 = &coil_8_label;
+    coil5_alias = &coil_5_label; 
+    coil6_alias = &coil_6_label;
+    coil7_alias = &coil_7_label;
+    coil8_alias = &coil_8_label;
 
   };
   /* Creando nodo para GPIO específico */
