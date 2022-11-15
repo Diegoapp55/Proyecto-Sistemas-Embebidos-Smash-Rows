@@ -38,6 +38,7 @@ static const struct gpio_dt_spec coil8 = GPIO_DT_SPEC_GET(COIL8_NODE, gpios);
 
 void main(void)
 {
+	/*Definicion de constantes*/
 	int vel_motor=2000;
 	int count_step = 0;
 	int round_step = 4076;
@@ -45,7 +46,18 @@ void main(void)
 	const int numberSteps = 4;
 	const int tableSteps[4] = {B1000, B0100, B0010, B0001};
 
-	coil1 = gpio_pin_configure_dt(&coil1, GPIO_OUTPUT_ACTIVE);
+	/*Definicion de salida de motor 1*/
+	int motorA1 = gpio_pin_configure_dt(&coil1, GPIO_OUTPUT_ACTIVE);
+	int motorA2 = gpio_pin_configure_dt(&coil2, GPIO_OUTPUT_ACTIVE);
+	int motorA3 = gpio_pin_configure_dt(&coil3, GPIO_OUTPUT_ACTIVE);
+	int motorA4 = gpio_pin_configure_dt(&coil4, GPIO_OUTPUT_ACTIVE);
+
+	/*Definicion de salida de motor 2*/
+	int motorB1 = gpio_pin_configure_dt(&coil5, GPIO_OUTPUT_ACTIVE);
+	int motorB2 = gpio_pin_configure_dt(&coil6, GPIO_OUTPUT_ACTIVE);
+	int motorB3 = gpio_pin_configure_dt(&coil7, GPIO_OUTPUT_ACTIVE);
+	int motorB4 = gpio_pin_configure_dt(&coil8, GPIO_OUTPUT_ACTIVE);
+	
 
 	if (!device_is_ready(led.port)) {
 		return;
