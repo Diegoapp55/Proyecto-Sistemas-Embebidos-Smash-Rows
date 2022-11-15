@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import java.io.File;
+import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
     public void insertDocument(View view){
         Intent insertDocument = new Intent(this, InserDocument.class);
         startActivity(insertDocument);
+    }
+
+    //Button Scanner Document --> Scanner Document Layout
+    public void scannerDocument(View view){
+        Intent scannerDocument = new Intent(this, ScannerDocument.class);
+        startActivity(scannerDocument);
     }
 
 
