@@ -31,10 +31,10 @@ const int tablaPasos[8] = { B1000, B1100, B0100, B0110, B0010, B0011, B0001, B10
 void setup()
 {
 //declarar pines como salida
-pinMode(pinMotor1, OUTPUT);
-pinMode(pinMotor2, OUTPUT);
-pinMode(pinMotor3, OUTPUT);
-pinMode(pinMotor4, OUTPUT);
+      pinMode(pinMotor1, OUTPUT);
+      pinMode(pinMotor2, OUTPUT);
+      pinMode(pinMotor3, OUTPUT);
+      pinMode(pinMotor4, OUTPUT);
 }
 
 void loop()

@@ -13,16 +13,17 @@
 
 /* Define all coils for the motors */
 /*Nodos del motor 1*/
-#define COIL1_NODE DT_ALIAS(coil1)
-#define COIL2_NODE DT_ALIAS(coil2)
-#define COIL3_NODE DT_ALIAS(coil3)
-#define COIL4_NODE DT_ALIAS(coil4)
+#define COIL1_NODE DT_ALIAS(coil1_alias)
+#define COIL2_NODE DT_ALIAS(coil2_alias)
+#define COIL3_NODE DT_ALIAS(coil3_alias)
+#define COIL4_NODE DT_ALIAS(coil4_alias)
 
 /*Nodos del motor 2*/
-#define COIL5_NODE DT_ALIAS(coil5)
-#define COIL6_NODE DT_ALIAS(coil6)
-#define COIL7_NODE DT_ALIAS(coil7)
-#define COIL8_NODE DT_ALIAS(coil8)
+#define COIL5_NODE DT_ALIAS(coil5_alias)
+#define COIL6_NODE DT_ALIAS(coil6_alias)
+#define COIL7_NODE DT_ALIAS(coil7_alias)
+#define COIL8_NODE DT_ALIAS(coil8_alias)
+#define OK 0
 
 /*Llamado a los pines reales motor 1*/
 static const struct gpio_dt_spec coil1 = GPIO_DT_SPEC_GET(COIL1_NODE, gpios);
@@ -36,8 +37,10 @@ static const struct gpio_dt_spec coil6 = GPIO_DT_SPEC_GET(COIL6_NODE, gpios);
 static const struct gpio_dt_spec coil7 = GPIO_DT_SPEC_GET(COIL7_NODE, gpios);
 static const struct gpio_dt_spec coil8 = GPIO_DT_SPEC_GET(COIL8_NODE, gpios);
 
+
 void main(void)
 {
+	int ret = 0;
 	int vel_motor=1000;
 	int count_step = 0;
 	int round_step = 4076;
@@ -46,8 +49,43 @@ void main(void)
 		return;
 	}
 
-	ret = gpio_pin_configure_dt(&led, GPIO_OUTPUT_ACTIVE);
-	if (ret < 0) {
+	ret = gpio_pin_configure_dt(&coil1, GPIO_OUTPUT_LOW);
+	if (ret < OK) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&coil2, GPIO_OUTPUT_LOW);
+	if (ret < OK) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&coil3, GPIO_OUTPUT_LOW);
+	if (ret < OK) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&coil4, GPIO_OUTPUT_LOW);
+	if (ret < OK) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&coil5, GPIO_OUTPUT_LOW);
+	if (ret < OK) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&coil6, GPIO_OUTPUT_LOW);
+	if (ret < OK) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&coil7, GPIO_OUTPUT_LOW);
+	if (ret < OK) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&coil8, GPIO_OUTPUT_LOW);
+	if (ret < OK) {
 		return;
 	}
 
