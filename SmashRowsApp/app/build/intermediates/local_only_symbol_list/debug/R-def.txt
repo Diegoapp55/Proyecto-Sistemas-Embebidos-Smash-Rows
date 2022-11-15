@@ -21,6 +21,7 @@ id InsertDocument
 id MainTitle
 id Scanner
 id Users
+layout activity_inser_document
 layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground

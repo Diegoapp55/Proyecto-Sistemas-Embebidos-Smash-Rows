@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:onClick="insertDocument"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="@color/background">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/MainTitle"
@@ -39,56 +40,56 @@
         app:srcCompat="@drawable/logo" />
 
     <Button
+        android:id="@+id/Users"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
         android:text="Ingresar Documento"
+        android:onClick="insertDocument"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/Users"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/Scanner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escanear Documento"
-        android:gravity="center_horizontal"
         android:background="@drawable/round_button"
-        app:layout_constraintVertical_bias="0.3"
+        android:gravity="center_horizontal"
+        android:text="Escanear Documento"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Users"
-        android:id="@+id/Scanner"/>
+        app:layout_constraintVertical_bias="0.3" />
 
     <Button
+        android:id="@+id/AboutUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Acerca de..."
-        android:gravity="center_horizontal"
         android:background="@drawable/round_button"
-        app:layout_constraintVertical_bias="0.4"
+        android:gravity="center_horizontal"
+        android:text="Acerca de..."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Scanner"
-        android:id="@+id/AboutUs"/>
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
+        android:id="@+id/Exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:gravity="center_horizontal"
         android:text="Salir"
         android:onClick="exitApp"
-        android:gravity="center_horizontal"
-        android:background="@drawable/round_button"
-        app:layout_constraintVertical_bias="0.7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/AboutUs"
-        android:id="@+id/Exit"/>
+        app:layout_constraintVertical_bias="0.7" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
