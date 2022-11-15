@@ -45,6 +45,22 @@ void main(void)
 	int count_step = 0;
 	int round_step = 4076;
 
+	const int numberSteps = 4;
+	const int tableSteps[4] = {B1000, B0100, B0010, B0001};
+
+	/*Definicion de salida de motor 1*/
+	int motorA1 = gpio_pin_configure_dt(&coil1, GPIO_OUTPUT_ACTIVE);
+	int motorA2 = gpio_pin_configure_dt(&coil2, GPIO_OUTPUT_ACTIVE);
+	int motorA3 = gpio_pin_configure_dt(&coil3, GPIO_OUTPUT_ACTIVE);
+	int motorA4 = gpio_pin_configure_dt(&coil4, GPIO_OUTPUT_ACTIVE);
+
+	/*Definicion de salida de motor 2*/
+	int motorB1 = gpio_pin_configure_dt(&coil5, GPIO_OUTPUT_ACTIVE);
+	int motorB2 = gpio_pin_configure_dt(&coil6, GPIO_OUTPUT_ACTIVE);
+	int motorB3 = gpio_pin_configure_dt(&coil7, GPIO_OUTPUT_ACTIVE);
+	int motorB4 = gpio_pin_configure_dt(&coil8, GPIO_OUTPUT_ACTIVE);
+
+
 	if (!device_is_ready(led.port)) {
 		return;
 	}
@@ -96,4 +112,19 @@ void main(void)
 		}
 		k_msleep(SLEEP_TIME_MS);
 	}
+}
+
+void sentidoHorario() // en dirección de las agujas del reloj
+{
+contadorPasos++;
+if (contadorPasos >= cantidadPasos) contadorPasos = 0;
+escribirSalidas(contadorPasos);
+}
+
+void escribirSalidas(int paso)
+{
+digitalWrite(pinMotor1, bitRead(tablaPasos[paso], 0));
+digitalWrite(pinMotor2, bitRead(tablaPasos[paso], 1));
+digitalWrite(pinMotor3, bitRead(tablaPasos[paso], 2));
+digitalWrite(pinMotor4, bitRead(tablaPasos[paso], 3));
 }
