@@ -48,23 +48,7 @@ void main(void)
 	const int numberSteps = 4;
 	const int tableSteps[4] = {B1000, B0100, B0010, B0001};
 
-	/*Definicion de salida de motor 1*/
-	int motorA1 = gpio_pin_configure_dt(&coil1, GPIO_OUTPUT_ACTIVE);
-	int motorA2 = gpio_pin_configure_dt(&coil2, GPIO_OUTPUT_ACTIVE);
-	int motorA3 = gpio_pin_configure_dt(&coil3, GPIO_OUTPUT_ACTIVE);
-	int motorA4 = gpio_pin_configure_dt(&coil4, GPIO_OUTPUT_ACTIVE);
-
-	/*Definicion de salida de motor 2*/
-	int motorB1 = gpio_pin_configure_dt(&coil5, GPIO_OUTPUT_ACTIVE);
-	int motorB2 = gpio_pin_configure_dt(&coil6, GPIO_OUTPUT_ACTIVE);
-	int motorB3 = gpio_pin_configure_dt(&coil7, GPIO_OUTPUT_ACTIVE);
-	int motorB4 = gpio_pin_configure_dt(&coil8, GPIO_OUTPUT_ACTIVE);
-
-
-	if (!device_is_ready(led.port)) {
-		return;
-	}
-
+	//Definicion de los motores como salida
 	ret = gpio_pin_configure_dt(&coil1, GPIO_OUTPUT_LOW);
 	if (ret < OK) {
 		return;
@@ -105,6 +89,8 @@ void main(void)
 		return;
 	}
 
+	
+
 	while (1) {
 		ret = gpio_pin_toggle_dt(&led);
 		if (ret < 0) {
@@ -114,12 +100,21 @@ void main(void)
 	}
 }
 
+
+
 void sentidoHorario() // en dirección de las agujas del reloj
 {
 contadorPasos++;
 if (contadorPasos >= cantidadPasos) contadorPasos = 0;
 escribirSalidas(contadorPasos);
 }
+
+//ret = gpio_pin_set_dt(&coil1, 1/0)
+//Cambio el valor de coil1  de 0 a 1
+gpio_pin_set_dt(&coil1, 1);
+
+
+
 
 void escribirSalidas(int paso)
 {
