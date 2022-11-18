@@ -1,0 +1,60 @@
+/* ~/zephyrproject/zephyr/boards/xtensa/esp32 */
+/* ~/zephyrproject/zephyr/soc/xtensa/esp32/ */
+/* ~/zephyrproject/zephyr/dts/xtensa/espressif/esp32.dtsi */
+/* ~/zephyrproject/zephyr/include/dt-bindings/gpio/gpio.h */
+/* ~/zephyrproject/zephyr/drivers/gpio/gpio_esp32.c */
+/* ~/zephyrproject/zephyr/drivers/pinmux/pinmux_esp32.c */
+/* ~/zephyrproject/zephyr/dts/bindings/gpio/espressif,esp32-gpio.yaml */
+
+/* dts: https://docs.zephyrproject.org/latest/build/dts/index.html */
+/* pinmux: https://docs.opentitan.org/hw/ip/pinmux/doc/ */
+
+/ {
+
+  aliases {
+    /*Motor 1*/
+    coil1_alias = &coil_1_label;
+    coil2_alias = &coil_2_label;
+    coil3_alias = &coil_3_label;
+    coil4_alias = &coil_4_label;
+
+    /*Motor 2*/
+    coil5_alias = &coil_5_label;
+    coil6_alias = &coil_6_label;
+    coil7_alias = &coil_7_label;
+    coil8_alias = &coil_8_label;
+
+  };
+  /* Creando nodo para GPIO específico */
+  my_leds_node {
+    /* ~/zephyrproject/zephyr/dts/bindings/gpio/gpio-leds.yaml */
+    compatible = "gpio-leds";
+    /*Motor 1*/
+    coil_1_label: COIL1_NODE {
+      gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
+    }
+    coil_2_label: COIL2_NODE {
+      gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
+    }
+    coil_3_label: COIL3_NODE {
+      gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
+    }
+    coil_4_label: COIL4_NODE {
+      gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+    }
+
+  /*Motor 2*/
+  coil_5_label: COIL5_NODE {
+      gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+    }
+    coil_6_label: COIL6_NODE {
+      gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
+    }
+    coil_7_label: COIL7_NODE {
+      gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
+    }
+    coil_8_label: COIL8_NODE {
+      gpios = <&gpio0 23 GPIO_ACTIVE_LOW>;
+    }
+  };
+};

@@ -13,6 +13,7 @@
   
   aliases {
     led0 = &led_blue_label;
+    led2 = &led_blue_label1;
   };
   /* Creando nodo para GPIO específico */
   my_leds_node {
@@ -20,6 +21,9 @@
     compatible = "gpio-leds";
     led_blue_label: led_blue_node {
       gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+    };
+    led_blue_label1: led_blue_node1 {
+      gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
     };
   };
 };
