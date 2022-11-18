@@ -2553,6 +2553,7 @@ int drawable btn_radio_off_mtrl 0x7f070078
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070079
 int drawable btn_radio_on_mtrl 0x7f07007a
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f07007b
+int drawable bx_cog 0x7f0700d6
 int drawable design_fab_background 0x7f07007c
 int drawable design_ic_visibility 0x7f07007d
 int drawable design_ic_visibility_off 0x7f07007e
@@ -2652,6 +2653,7 @@ int id ButtonBackInsert 0x7f0801e5
 int id ButtonBackScanner 0x7f0801e6
 int id ButtonBackUs 0x7f0801e7
 int id CTRL 0x7f080003
+int id Config 0x7f0801ed
 int id Diego 0x7f0801e8
 int id Eduardo 0x7f0801e9
 int id Exit 0x7f0801e2

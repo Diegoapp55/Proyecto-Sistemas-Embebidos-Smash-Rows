@@ -2554,6 +2554,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable bx_cog
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2653,6 +2654,7 @@ id ButtonBackInsert
 id ButtonBackScanner
 id ButtonBackUs
 id CTRL
+id Config
 id Diego
 id Eduardo
 id Exit

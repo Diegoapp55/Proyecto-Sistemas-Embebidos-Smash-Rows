@@ -9,6 +9,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable bx_cog
 drawable exit
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -19,6 +20,7 @@ id AboutUs
 id ButtonBackInsert
 id ButtonBackScanner
 id ButtonBackUs
+id Config
 id Diego
 id Eduardo
 id Exit

@@ -8,6 +8,10 @@
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-debug-30:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/drawable-mdpi_bx_cog.xml.flat",
+        "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/drawable-mdpi/bx_cog.xml"
+    },
+    {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-debug-30:/mipmap-hdpi/ic_launcher.png"
     },
@@ -22,6 +26,10 @@
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/xml_backup_rules.xml.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.smashrows.app-merged_res-29:/drawable-mdpi_logo.png.flat",
+        "source": "com.example.smashrows.app-main-31:/drawable-mdpi/logo.png"
     },
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/layout_activity_about_us.xml.flat",
@@ -68,12 +76,12 @@
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-debug-30:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.smashrows.app-merged_res-29:/drawable-mdpi_logo.jpeg.flat",
-        "source": "com.example.smashrows.app-main-31:/drawable-mdpi/logo.jpeg"
-    },
-    {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/drawable-mdpi_logo.jpeg.flat",
+        "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/drawable-mdpi/logo.jpeg"
     },
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
