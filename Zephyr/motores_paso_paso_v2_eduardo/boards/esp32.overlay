@@ -12,49 +12,67 @@
 / {
 
   aliases {
+    /*LedBlink*/
+    led0 = &led_blue_label;
     /*Motor 1*/
-    coil1_alias = &coil_1_label;
-    coil2_alias = &coil_2_label;
-    coil3_alias = &coil_3_label;
-    coil4_alias = &coil_4_label;
+    coil1alias = &coil_1_label; /*No se pueden colocar aliases con "_", solo se permiten caracteres del 0-9 y de la a-z*/
+    coil2alias = &coil_2_label;
+    coil3alias = &coil_3_label;
+    coil4alias = &coil_4_label;
 
     /*Motor 2*/
-    coil5_alias = &coil_5_label;
-    coil6_alias = &coil_6_label;
-    coil7_alias = &coil_7_label;
-    coil8_alias = &coil_8_label;
+    coil5alias = &coil_5_label;
+    coil6alias = &coil_6_label;
+    coil7alias = &coil_7_label;
+    coil8alias = &coil_8_label;
 
   };
   /* Creando nodo para GPIO específico */
   my_leds_node {
     /* ~/zephyrproject/zephyr/dts/bindings/gpio/gpio-leds.yaml */
     compatible = "gpio-leds";
-    /*Motor 1*/
+    /*Blink para depurar*/
+    led_blue_label: led_blue_node {
+      gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
+    };
+    /*Motor 1
+    Los del proyecto son:
+      coil_1_label -> GPIO 9
+      coil_2_label -> GPIO 10
+      coil_3_label -> GPIO 11
+      coil_4_label -> GPIO 12
+    */
     coil_1_label: COIL1_NODE {
-      gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
-    }
+      gpios = <&gpio0 32 GPIO_ACTIVE_LOW>;
+    }; /*Nos faltaban ; al finalizar las } jaja*/
     coil_2_label: COIL2_NODE {
-      gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
-    }
+      gpios = <&gpio0 33 GPIO_ACTIVE_LOW>;
+    };
     coil_3_label: COIL3_NODE {
-      gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
-    }
+      gpios = <&gpio0 34 GPIO_ACTIVE_LOW>;
+    };
     coil_4_label: COIL4_NODE {
-      gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
-    }
+      gpios = <&gpio0 35 GPIO_ACTIVE_LOW>;
+    };
 
-  /*Motor 2*/
+  /*Motor 2
+  Los del proyecto son:
+      coil_5_label -> GPIO 13
+      coil_6_label -> GPIO 14
+      coil_7_label -> GPIO 16
+      coil_8_label -> GPIO 23
+  */
   coil_5_label: COIL5_NODE {
-      gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
-    }
+      gpios = <&gpio0 27 GPIO_ACTIVE_LOW>;
+    };
     coil_6_label: COIL6_NODE {
       gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
-    }
+    };
     coil_7_label: COIL7_NODE {
-      gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
-    }
+      gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+    };
     coil_8_label: COIL8_NODE {
-      gpios = <&gpio0 23 GPIO_ACTIVE_LOW>;
-    }
+      gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+    };
   };
 };
