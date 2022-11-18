@@ -14,6 +14,7 @@ public class AboutUs extends AppCompatActivity {
         setContentView(R.layout.activity_about_us);
     }
 
+    //Button Back MainLayout
     public void back(View view){
         Intent back = new Intent(this, MainActivity.class);
         startActivity(back);

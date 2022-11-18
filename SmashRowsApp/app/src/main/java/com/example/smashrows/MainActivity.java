@@ -41,5 +41,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(aboutUs);
     }
 
+    //Button Config --> ConfigDB Layout
+    public void config(View view){
+        Intent config= new Intent(this, ConfigDB.class);
+        startActivity(config);
+    }
+
 
 }

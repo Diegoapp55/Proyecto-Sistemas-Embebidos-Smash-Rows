@@ -32,6 +32,7 @@ id Scanner
 id Sergio
 id Users
 layout activity_about_us
+layout activity_config_db
 layout activity_inser_document
 layout activity_main
 layout activity_scanner_document
