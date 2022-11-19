@@ -27,14 +27,17 @@
     coil8alias = &coil_8_label;
 
   };
-  /* Creando nodo para GPIO específico */
-  my_leds_node {
+
+  leds_node {
     /* ~/zephyrproject/zephyr/dts/bindings/gpio/gpio-leds.yaml */
     compatible = "gpio-leds";
     /*Blink para depurar*/
     led_blue_label: led_blue_node {
       gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
     };
+  };
+  /* Creando nodo para GPIO específico */
+  my_gpio_node {
     /*Motor 1
     Los del proyecto son:
       coil_1_label -> GPIO 9
@@ -42,17 +45,18 @@
       coil_3_label -> GPIO 11
       coil_4_label -> GPIO 12
     */
+    compatible = "gpio-leds";
     coil_1_label: COIL1_NODE {
-      gpios = <&gpio0 32 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 9 GPIO_ACTIVE_LOW>; // <-- este pin tiene problema prueba por ejemplo el 2
     }; /*Nos faltaban ; al finalizar las } jaja*/
     coil_2_label: COIL2_NODE {
-      gpios = <&gpio0 33 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 10 GPIO_ACTIVE_LOW>; // <-- este pin tiene problema
     };
     coil_3_label: COIL3_NODE {
-      gpios = <&gpio0 34 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 11 GPIO_ACTIVE_LOW>; // <-- este pin tiene problema prueba por ejemplo el 4
     };
     coil_4_label: COIL4_NODE {
-      gpios = <&gpio0 35 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
     };
 
   /*Motor 2
@@ -63,16 +67,16 @@
       coil_8_label -> GPIO 23
   */
   coil_5_label: COIL5_NODE {
-      gpios = <&gpio0 27 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
     };
     coil_6_label: COIL6_NODE {
       gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
     };
     coil_7_label: COIL7_NODE {
-      gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
     };
     coil_8_label: COIL8_NODE {
-      gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 23 GPIO_ACTIVE_LOW>;
     };
   };
 };
