@@ -2649,6 +2649,10 @@ int id ALT 0x7f080000
 int id AboutUs 0x7f0801e3
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
+int id BtDelete 0x7f0801ee
+int id BtSave 0x7f0801ef
+int id BtSearch 0x7f0801f0
+int id BtUpdate 0x7f0801f1
 int id ButtonBackInsert 0x7f0801e5
 int id ButtonBackScanner 0x7f0801e6
 int id ButtonBackUs 0x7f0801e7
@@ -2673,6 +2677,10 @@ int id Scanner 0x7f0801e4
 int id Sergio 0x7f0801ec
 int id TOP_END 0x7f08000c
 int id TOP_START 0x7f08000d
+int id UserDrugs 0x7f0801f2
+int id UserId 0x7f0801f3
+int id UserLastName 0x7f0801f4
+int id UserName 0x7f0801f5
 int id Users 0x7f0801de
 int id accelerate 0x7f08000e
 int id accessibility_action_clickable_span 0x7f08000f

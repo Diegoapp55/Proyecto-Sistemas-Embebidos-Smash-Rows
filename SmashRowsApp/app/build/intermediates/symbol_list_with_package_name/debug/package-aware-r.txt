@@ -2650,6 +2650,10 @@ id ALT
 id AboutUs
 id BOTTOM_END
 id BOTTOM_START
+id BtDelete
+id BtSave
+id BtSearch
+id BtUpdate
 id ButtonBackInsert
 id ButtonBackScanner
 id ButtonBackUs
@@ -2674,6 +2678,10 @@ id Scanner
 id Sergio
 id TOP_END
 id TOP_START
+id UserDrugs
+id UserId
+id UserLastName
+id UserName
 id Users
 id accelerate
 id accessibility_action_clickable_span

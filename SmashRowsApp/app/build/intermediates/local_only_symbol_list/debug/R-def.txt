@@ -17,6 +17,10 @@ drawable logo
 drawable round_button
 font comic_neue_bold_italic
 id AboutUs
+id BtDelete
+id BtSave
+id BtSearch
+id BtUpdate
 id ButtonBackInsert
 id ButtonBackScanner
 id ButtonBackUs
@@ -30,6 +34,10 @@ id MainTitle
 id Raul
 id Scanner
 id Sergio
+id UserDrugs
+id UserId
+id UserLastName
+id UserName
 id Users
 layout activity_about_us
 layout activity_config_db

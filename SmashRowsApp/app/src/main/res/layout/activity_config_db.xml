@@ -23,9 +23,70 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.736"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/UserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ingresar id de usuario"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/comic_neue_bold_italic"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/MainTitle"/>
+
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ingresar nombre de usuario"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/comic_neue_bold_italic"
+        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/UserId"/>
+
+    <EditText
+        android:id="@+id/UserLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ingresar apellido de usuario"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/comic_neue_bold_italic"
+        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/UserName"/>
+
+    <EditText
+        android:id="@+id/UserDrugs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ingresar medicamento de usuario"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/comic_neue_bold_italic"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/UserLastName"/>
 
     <Button
         android:id="@+id/BtSave"
@@ -36,8 +97,10 @@
         android:text="Guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
         android:id="@+id/BtSearch"
@@ -46,11 +109,12 @@
         android:background="@drawable/round_button"
         android:gravity="center_horizontal"
         android:text="Buscar"
-        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/BtSave" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
         android:id="@+id/BtUpdate"
@@ -58,12 +122,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
         android:gravity="center_horizontal"
-        android:text="Actualizar"
-        app:layout_constraintVertical_bias="0.25"
+        android:text="Editar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/BtSearch"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
         android:id="@+id/BtDelete"
@@ -71,12 +136,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
         android:gravity="center_horizontal"
-        android:text="Eliminar"
-        app:layout_constraintVertical_bias="0.35"
+        android:text="Borrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/BtUpdate"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
         android:id="@+id/ButtonBackUs"
