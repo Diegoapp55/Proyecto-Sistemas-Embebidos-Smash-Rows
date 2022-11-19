@@ -25,7 +25,9 @@
 #define COIL6_NODE DT_ALIAS(coil6alias)
 #define COIL7_NODE DT_ALIAS(coil7alias)
 #define COIL8_NODE DT_ALIAS(coil8alias)
+#define SUCCESSFUL 0
 #define OK 0
+#define ERROR 1
 
 /*Llamado a los pines reales del led*/
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
@@ -47,17 +49,32 @@ int leerTabla(int paso[], int posicion){
 	return lectura;
 }
 
+int led_debug_init(void)
+{
+	if (!device_is_ready(led.port))
+		return ERROR;
+	if(gpio_pin_configure_dt(&led, GPIO_OUTPUT_ACTIVE) < 0)
+    return ERROR;
+  return SUCCESSFUL;
+}
+
+/* Función que configura los pines como salidas y con valor inicial igual a 0 */
+void pins_config_init(void)
+{
+  int ret;
+	ret = gpio_pin_configure_dt(&coil1, GPIO_OUTPUT_LOW);
+  printk("%d ", ret);
+	ret = gpio_pin_configure_dt(&coil2, GPIO_OUTPUT_LOW);
+  printk("%d ", ret);
+	ret = gpio_pin_configure_dt(&coil3, GPIO_OUTPUT_LOW);
+  printk("%d ", ret);
+	ret = gpio_pin_configure_dt(&coil4, GPIO_OUTPUT_LOW);
+  printk("%d ", ret);
+}
+
 void main(void)
 {
 	int ret = 0;
-	int ret1 = 0;
-	int ret2 = 0;
-	int ret3 = 0;
-	int ret4 = 0;
-	int ret5 = 0;
-	int ret6 = 0;
-	int ret7 = 0;
-	int ret8 = 0;
 	int vel_motor=1000;
 	int count_step = 0;
 	int round_step = 4076;
@@ -66,14 +83,23 @@ void main(void)
 	const int tableSteps[4] = {0x8, 0x4, 0x2, 0x1};
 
 	/*Lo del blink para depurar*/
-	if (!device_is_ready(led.port)) {
-		return;
-	}
+	/* if (!device_is_ready(led.port)) { */
+	/* 	return; */
+	/* } */
 
-	ret = gpio_pin_configure_dt(&led, GPIO_OUTPUT_ACTIVE);
-	if (ret < 0) {
-		return;
-	}
+	/* ret = gpio_pin_configure_dt(&led, GPIO_OUTPUT_ACTIVE); */
+	/* if (ret < 0) { */
+	/* 	return; */
+	/* } */
+
+
+  /* Iniciar led de debug */
+  if(led_debug_init() == ERROR)
+    return;
+	
+  /* Iniciar steppers */
+  pins_config_init();
+
 	//Definicion de los motores como salida
 	/*NOTA: Puede que no sirva porque al dejar esta parte sin comentar, el blink no hace blink :V, se queda quieto encendido. Si se comenta esto ahí si sirve el blink*/
 	// ret1 = gpio_pin_configure_dt(&coil1, GPIO_OUTPUT_LOW);
