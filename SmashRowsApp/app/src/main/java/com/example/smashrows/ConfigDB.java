@@ -28,7 +28,35 @@ public class ConfigDB extends AppCompatActivity {
         UserLastName = (EditText)findViewById(R.id.UserLastName);
         UserDrugs = (EditText)findViewById(R.id.UserDrugs);
 
+        BtSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        BtSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        BtUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        BtDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
+    
     //Button Back MainLayout
     public void back(View view){
         Intent back = new Intent(this, MainActivity.class);
