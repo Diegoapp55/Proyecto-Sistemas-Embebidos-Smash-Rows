@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Para que no muestre cambios para hacer commit cada que se abre el kicad solo para mirar algo
+Esquemáticos/ESP32/ESP32-backups/ESP32-2022-10-09_202211.zip
