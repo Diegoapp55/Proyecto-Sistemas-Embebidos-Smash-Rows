@@ -10,7 +10,7 @@
 /* pinmux: https://docs.opentitan.org/hw/ip/pinmux/doc/ */
 
 / {
-  
+
   aliases {
     led0 = &led_blue_label;
     led2 = &led_blue_label1;
@@ -20,12 +20,10 @@
     /* ~/zephyrproject/zephyr/dts/bindings/gpio/gpio-leds.yaml */
     compatible = "gpio-leds";
     led_blue_label: led_blue_node {
-      gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 2 GPIO_ACTIVE_LOW>; /*Si asigno el GPIO 27 muere blink, no se por que :S*/
     };
     led_blue_label1: led_blue_node1 {
-      gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
     };
   };
 };
-	
-	

@@ -13,12 +13,14 @@
 
 /* The devicetree node identifier for the "led0" alias. */
 #define LED0_NODE DT_ALIAS(led0)
+#define LED2_NODE DT_ALIAS(led2)
 
 /*
  * A build error on this line means your board is unsupported.
  * See the sample documentation for information on how to fix this.
  */
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
+static const struct gpio_dt_spec led2 = GPIO_DT_SPEC_GET(LED2_NODE, gpios);
 
 void main(void)
 {
@@ -33,8 +35,21 @@ void main(void)
 		return;
 	}
 
+	if (!device_is_ready(led2.port)) {
+		return;
+	}
+
+	ret = gpio_pin_configure_dt(&led2, GPIO_OUTPUT_ACTIVE);
+	if (ret < 0) {
+		return;
+	}
+
 	while (1) {
 		ret = gpio_pin_toggle_dt(&led);
+		if (ret < 0) {
+			return;
+		}
+		ret = gpio_pin_toggle_dt(&led2);
 		if (ret < 0) {
 			return;
 		}
