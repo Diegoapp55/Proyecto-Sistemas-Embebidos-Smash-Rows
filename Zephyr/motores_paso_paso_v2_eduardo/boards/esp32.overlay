@@ -39,44 +39,44 @@
   /* Creando nodo para GPIO específico */
   my_gpio_node {
     /*Motor 1
-    Los del proyecto son:
-      coil_1_label -> GPIO 9
-      coil_2_label -> GPIO 10
-      coil_3_label -> GPIO 11
-      coil_4_label -> GPIO 12
+    Segun KiCad (Esquematico)
+      In1 -> GPIO 27
+      In2 -> GPIO 26
+      In3 -> GPIO 25
+      In4 -> GPIO 33
     */
     compatible = "gpio-leds";
     coil_1_label: COIL1_NODE {
-      gpios = <&gpio0 9 GPIO_ACTIVE_LOW>; // <-- este pin tiene problema prueba por ejemplo el 2
+      gpios = <&gpio0 27 GPIO_ACTIVE_LOW>; // <-- este pin tiene problema prueba por ejemplo el 2 (Solucionado)
     }; /*Nos faltaban ; al finalizar las } jaja*/
     coil_2_label: COIL2_NODE {
-      gpios = <&gpio0 10 GPIO_ACTIVE_LOW>; // <-- este pin tiene problema
+      gpios = <&gpio0 26 GPIO_ACTIVE_LOW>; // <-- este pin tiene problema (Solucionado)
     };
     coil_3_label: COIL3_NODE {
-      gpios = <&gpio0 11 GPIO_ACTIVE_LOW>; // <-- este pin tiene problema prueba por ejemplo el 4
+      gpios = <&gpio0 25 GPIO_ACTIVE_LOW>; // <-- este pin tiene problema prueba por ejemplo el 4 (Solucionado)
     };
     coil_4_label: COIL4_NODE {
-      gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 33 GPIO_ACTIVE_LOW>;
     };
 
   /*Motor 2
-  Los del proyecto son:
-      coil_5_label -> GPIO 13
-      coil_6_label -> GPIO 14
-      coil_7_label -> GPIO 16
-      coil_8_label -> GPIO 23
+  Segun KiCad (Esquematico)
+      In5 -> GPIO 15
+      In6 -> GPIO 13
+      In7 -> GPIO 12
+      In8 -> GPIO 14
   */
   coil_5_label: COIL5_NODE {
-      gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
     };
     coil_6_label: COIL6_NODE {
-      gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
     };
     coil_7_label: COIL7_NODE {
-      gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
     };
     coil_8_label: COIL8_NODE {
-      gpios = <&gpio0 23 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
     };
   };
 };
