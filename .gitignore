@@ -52,4 +52,4 @@ Mkfile.old
 dkms.conf
 
 # Para que no muestre cambios para hacer commit cada que se abre el kicad solo para mirar algo
-Esquemáticos/ESP32/ESP32-backups/
+/Esquematicos/ESP32/ESP32-backups/
