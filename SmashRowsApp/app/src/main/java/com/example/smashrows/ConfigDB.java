@@ -13,64 +13,79 @@ import android.widget.Toast;
 
 public class ConfigDB extends AppCompatActivity {
 
-    Button BtSave, BtSearch, BtUpdate, BtDelete;
+    //Botones Usuarios
+    Button BtSaveUser, BtSearchUser, BtUpdateUser, BtDeleteUser;
     EditText UserId, UserName, UserLastName, UserDrugs;
+
+    //Botones Medicamentos
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_config_db);
 
-        //Instanciar elementos de la interfaz.
-        BtSave = (Button)findViewById(R.id.BtSave);
-        BtSearch = (Button)findViewById(R.id.BtSearch);
-        BtUpdate = (Button)findViewById(R.id.BtUpdate);
-        BtDelete = (Button)findViewById(R.id.BtDelete);
+        //Instanciar elementos de la interfaz de Usuarios
+        BtSaveUser = (Button)findViewById(R.id.BtSaveUser);
+        BtSearchUser = (Button)findViewById(R.id.BtSearchUser);
+        BtUpdateUser = (Button)findViewById(R.id.BtUpdateUser);
+        BtDeleteUser = (Button)findViewById(R.id.BtDeleteUser);
 
         UserId = (EditText)findViewById(R.id.UserId);
         UserName = (EditText)findViewById(R.id.UserName);
         UserLastName = (EditText)findViewById(R.id.UserLastName);
         UserDrugs = (EditText)findViewById(R.id.UserDrugs);
 
-        //Creacion de objeto de la DB
-        HelpDB helpDB = new HelpDB(getApplicationContext());
+        //Instanciar elementos de la interfaz Medicamentos
 
-        BtSave.setOnClickListener(new View.OnClickListener() {
+
+        //Creacion de objeto de la DB Usuarios
+        HelpDBUser helpDBUser = new HelpDBUser(getApplicationContext());
+
+        //Creacion de objeto de la DB Medicamentos
+
+        //Botones de la DB Usuarios
+        BtSaveUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //DB configurada para escribir
-                SQLiteDatabase db_users = helpDB.getWritableDatabase();
+                //DB Usuarios configurada para escribir
+                SQLiteDatabase db_users = helpDBUser.getWritableDatabase();
                 ContentValues values = new ContentValues();
-                values.put(HelpDB.DATATABLE.COLUMN_ID, UserId.getText().toString());
-                values.put(HelpDB.DATATABLE.COLUMN_NAME, UserName.getText().toString());
-                values.put(HelpDB.DATATABLE.COLUMN_LAST_NAME, UserLastName.getText().toString());
-                values.put(HelpDB.DATATABLE.COLUMN_DRUGS, UserDrugs.getText().toString());
+                values.put(HelpDBUser.DATATABLE.COLUMN_ID, UserId.getText().toString());
+                values.put(HelpDBUser.DATATABLE.COLUMN_NAME, UserName.getText().toString());
+                values.put(HelpDBUser.DATATABLE.COLUMN_LAST_NAME, UserLastName.getText().toString());
+                values.put(HelpDBUser.DATATABLE.COLUMN_DRUGS, UserDrugs.getText().toString());
 
-                Long IdSave = db_users.insert(HelpDB.DATATABLE.TABLE_NAME, HelpDB.DATATABLE.COLUMN_ID, values);
-                Toast.makeText(getApplicationContext(), "Se guardo el usuario " + IdSave, Toast.LENGTH_LONG).show();
+                Long IdSaveUser = db_users.insert(HelpDBUser.DATATABLE.TABLE_NAME, HelpDBUser.DATATABLE.COLUMN_ID, values);
+                Toast.makeText(getApplicationContext(), "Se guardo el usuario " + IdSaveUser, Toast.LENGTH_LONG).show();
             }
         });
 
-        BtSearch.setOnClickListener(new View.OnClickListener() {
+        BtSearchUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
 
-        BtUpdate.setOnClickListener(new View.OnClickListener() {
+        BtUpdateUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
 
-        BtDelete.setOnClickListener(new View.OnClickListener() {
+        BtDeleteUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
+
+        //Botones de la DB Medicamentos
+
+
+
     }
 
     //Button Back MainLayout
