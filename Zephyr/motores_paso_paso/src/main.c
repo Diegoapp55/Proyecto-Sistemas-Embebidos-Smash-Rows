@@ -70,6 +70,14 @@ void pins_config_init(void)
   printk("%d ", ret);
 	ret = gpio_pin_configure_dt(&coil4, GPIO_OUTPUT_LOW);
   printk("%d ", ret);
+	ret = gpio_pin_configure_dt(&coil5, GPIO_OUTPUT_LOW);
+  printk("%d ", ret);
+	ret = gpio_pin_configure_dt(&coil6, GPIO_OUTPUT_LOW);
+  printk("%d ", ret);
+	ret = gpio_pin_configure_dt(&coil7, GPIO_OUTPUT_LOW);
+  printk("%d ", ret);
+	ret = gpio_pin_configure_dt(&coil8, GPIO_OUTPUT_LOW);
+  printk("%d ", ret);
 }
 
 void main(void)
@@ -96,7 +104,7 @@ void main(void)
   /* Iniciar led de debug */
   if(led_debug_init() == ERROR)
     return;
-	
+
   /* Iniciar steppers */
   pins_config_init();
 

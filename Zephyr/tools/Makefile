@@ -21,6 +21,8 @@ b:build
 f:flash
 t:terminal
 gt:gtkterm
+gm: guiconfig
+m: menuconfig
 c:clean
 ccz:clean-cache-zephyr
 help:commands
@@ -48,6 +50,14 @@ terminal:
 gtkterm:
 	$(SERIALMONITOR_GUI) --port $(SERIAL) --speed $(BAUD) || \
 		(printf "No tiene instalado el monitor serial picocom, puede instalarlo como sigue:\nsudo apt install gtkterm")
+
+menuconfig:
+	. ./environment.bash && \
+	west build -t menuconfig
+
+guiconfig:
+	. ./environment.bash && \
+	west build -t guiconfig
 
 clean:
 	rm -rf build/

@@ -43,7 +43,7 @@ let g:ale_c_gcc_options = "-std=c11 -Wall " . includeFiles
 "************************************************************************
 nnoremap <F1> :echo MyMenuFuntions()<CR>
 " nnoremap <silent> <F5> :ALEDetail<CR>
-nnoremap <silent> <F5> :mak! b<CR>
+nnoremap <silent> <F5> :mak! lb<CR>
 nnoremap <silent> <F6> :call ToggleCopenCclose()<CR>
 nnoremap <silent> <F7> :ALEDetail<CR>
 " nnoremap <silent> <F6> :call ToggleCopenCclose()<CR>
@@ -93,7 +93,7 @@ endfunction
 function MyMenuFuntions()
   let out = "Menu de Funciones:\n"
   let out .= " F1: Ver éste menú\n F2: Ubicación de archivo cargado en el buffer\n F3: Abrir NERDTree\n F4: TagBar\n"
-  let out .= " F5: Build (make b)\n"
+  let out .= " F5: Compilar (make lb)\n"
   " let out .= " F6: copen/cclose registro de errores y advertencias al compilar\n"
   let out .= " F6: Toggle copen cclose\n"
   let out .= " F7: Check detalles de errores C, C++\n"
@@ -109,4 +109,8 @@ autocmd FileType c setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType cpp setlocal tabstop=2 shiftwidth=2 expandtab
 " call CodeTab2()
 set autowrite!
+
+e src/wifi.h
+e src/wifi.c
+e src/main.c
 
