@@ -87,6 +87,7 @@ void main(void)
 	int count_step = 0;
 	int round_step = 4076;
 
+
 	const int numberSteps = 3200;
 	const int tableSteps[4] = {0x8, 0x4, 0x2, 0x1};
 
@@ -184,9 +185,58 @@ void main(void)
 				k_msleep(SLEEP_TIME);
 				count_step++; //Revisar si esto está bien o es mejor ponerlo fuera del for para que cuente vueltasy no cada paso
 			}
-		ret = gpio_pin_toggle_dt(&led);
-		if (ret < 0) {
-			return;
-		}
+
+
+		// ret = gpio_pin_toggle_dt(&led);
+		// if (ret < 0) {
+		// 	return;
+		// }
 	}
+
+k_msleep(5*SLEEP_TIME);
+count_step=0;
+
+	while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
+		// ret = gpio_pin_set_dt(&coil1, 1/0)
+		// Cambio el valor de los pines coilX
+			for (int i = 0; i < 4; i++) {
+				switch (tableSteps[i]) {
+					case 0x8:
+						gpio_pin_set_dt(&coil5, 0);
+						gpio_pin_set_dt(&coil6, 1);
+						gpio_pin_set_dt(&coil7, 1);
+						gpio_pin_set_dt(&coil8, 1);
+						break;
+					case 0x4:
+						gpio_pin_set_dt(&coil5, 1);
+						gpio_pin_set_dt(&coil6, 0);
+						gpio_pin_set_dt(&coil7, 1);
+						gpio_pin_set_dt(&coil8, 1);
+						break;
+					case 0x2:
+						gpio_pin_set_dt(&coil5, 1);
+						gpio_pin_set_dt(&coil6, 1);
+						gpio_pin_set_dt(&coil7, 0);
+						gpio_pin_set_dt(&coil8, 1);
+						break;
+					case 0x1:
+						gpio_pin_set_dt(&coil5, 1);
+						gpio_pin_set_dt(&coil6, 1);
+						gpio_pin_set_dt(&coil7, 1);
+						gpio_pin_set_dt(&coil8, 0);
+						break;
+				}
+				k_msleep(SLEEP_TIME);
+				count_step++; //Revisar si esto está bien o es mejor ponerlo fuera del for para que cuente vueltasy no cada paso
+			}
+
+
+		//ret = gpio_pin_toggle_dt(&led);
+		//if (ret < 0) {
+		//	return;
+		//}
+	}
+
+
+
 }
