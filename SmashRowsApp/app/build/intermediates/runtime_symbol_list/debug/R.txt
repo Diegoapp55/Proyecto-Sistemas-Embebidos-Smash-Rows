@@ -2658,6 +2658,8 @@ int id ButtonBackScanner 0x7f0801e6
 int id ButtonBackUs 0x7f0801e7
 int id CTRL 0x7f080003
 int id Config 0x7f0801ed
+int id Count 0x7f0801f6
+int id DBUsers 0x7f0801f7
 int id Diego 0x7f0801e8
 int id Eduardo 0x7f0801e9
 int id Exit 0x7f0801e2

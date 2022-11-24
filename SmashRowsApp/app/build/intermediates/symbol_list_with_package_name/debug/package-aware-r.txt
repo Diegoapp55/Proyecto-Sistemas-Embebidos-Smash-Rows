@@ -2659,6 +2659,8 @@ id ButtonBackScanner
 id ButtonBackUs
 id CTRL
 id Config
+id Count
+id DBUsers
 id Diego
 id Eduardo
 id Exit

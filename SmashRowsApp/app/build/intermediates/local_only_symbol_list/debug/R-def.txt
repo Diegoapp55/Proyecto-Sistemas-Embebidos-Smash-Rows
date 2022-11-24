@@ -25,6 +25,8 @@ id ButtonBackInsert
 id ButtonBackScanner
 id ButtonBackUs
 id Config
+id Count
+id DBUsers
 id Diego
 id Eduardo
 id Exit
