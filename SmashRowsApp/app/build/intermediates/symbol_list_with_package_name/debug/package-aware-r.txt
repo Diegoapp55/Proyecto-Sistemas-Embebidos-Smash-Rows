@@ -2663,7 +2663,6 @@ id ButtonBackScanner
 id ButtonBackUs
 id CTRL
 id Config
-id Count
 id DBDrugs
 id DBUsers
 id Diego
@@ -2688,6 +2687,7 @@ id Scanner
 id Sergio
 id TOP_END
 id TOP_START
+id UserCount
 id UserDrugs
 id UserId
 id UserLastName

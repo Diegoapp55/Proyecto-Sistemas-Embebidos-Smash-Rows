@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +16,7 @@ public class ConfigDB extends AppCompatActivity {
 
     //Botones Usuarios
     Button BtSaveUser, BtSearchUser, BtUpdateUser, BtDeleteUser;
-    EditText UserId, UserName, UserLastName, UserDrugs;
+    EditText UserId, UserName, UserLastName, UserDrugs, UserCount;
 
     //Botones Medicamentos
     Button BtSaveDrugs, BtSearchDrugs, BtUpdateDrugs, BtDeleteDrugs;
@@ -36,6 +37,7 @@ public class ConfigDB extends AppCompatActivity {
         UserName = (EditText)findViewById(R.id.UserName);
         UserLastName = (EditText)findViewById(R.id.UserLastName);
         UserDrugs = (EditText)findViewById(R.id.UserDrugs);
+        UserCount = (EditText)findViewById(R.id.UserCount);
 
         //Instanciar elementos de la interfaz Medicamentos
         BtSaveDrugs = (Button)findViewById(R.id.BtSaveDrugs);
@@ -64,6 +66,7 @@ public class ConfigDB extends AppCompatActivity {
                 values.put(HelpDBUser.DATATABLE.COLUMN_NAME, UserName.getText().toString());
                 values.put(HelpDBUser.DATATABLE.COLUMN_LAST_NAME, UserLastName.getText().toString());
                 values.put(HelpDBUser.DATATABLE.COLUMN_DRUGS, UserDrugs.getText().toString());
+                values.put(HelpDBUser.DATATABLE.COLUMN_COUNT, UserCount.getText().toString());
 
                 Long IdSaveUser = db_users.insert(HelpDBUser.DATATABLE.TABLE_NAME, HelpDBUser.DATATABLE.COLUMN_ID, values);
                 Toast.makeText(getApplicationContext(), "Se guardo el usuario " + IdSaveUser, Toast.LENGTH_LONG).show();
@@ -73,7 +76,17 @@ public class ConfigDB extends AppCompatActivity {
         BtSearchUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Configurar la DB para leer
+                SQLiteDatabase db_users = helpDBUser.getReadableDatabase();
+                String [] argsel = {UserId.getText().toString()};
+                String [] projection = {HelpDBUser.DATATABLE.COLUMN_NAME, HelpDBUser.DATATABLE.COLUMN_LAST_NAME, HelpDBUser.DATATABLE.COLUMN_DRUGS, HelpDBUser.DATATABLE.COLUMN_COUNT};
+                Cursor cursor = db_users.query(HelpDBUser.DATATABLE.TABLE_NAME, projection, HelpDBUser.DATATABLE.COLUMN_ID + "=?", argsel,null,null,null);
 
+                cursor.moveToFirst();
+                UserName.setText(cursor.getString(0));
+                UserLastName.setText(cursor.getString(1));
+                UserDrugs.setText(cursor.getString(2));
+                UserCount.setText(cursor.getString(3));
             }
         });
 

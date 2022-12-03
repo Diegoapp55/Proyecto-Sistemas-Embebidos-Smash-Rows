@@ -29,7 +29,6 @@ id ButtonBackInsert
 id ButtonBackScanner
 id ButtonBackUs
 id Config
-id Count
 id DBDrugs
 id DBUsers
 id Diego
@@ -44,6 +43,7 @@ id MainTitle
 id Raul
 id Scanner
 id Sergio
+id UserCount
 id UserDrugs
 id UserId
 id UserLastName
