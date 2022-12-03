@@ -35,6 +35,7 @@ id DBUsers
 id Diego
 id DrugsCount
 id DrugsId
+id DrugsName
 id Eduardo
 id Exit
 id InsertDocument
