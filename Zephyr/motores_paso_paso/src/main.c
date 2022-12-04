@@ -25,6 +25,10 @@
 #define COIL6_NODE DT_ALIAS(coil6alias)
 #define COIL7_NODE DT_ALIAS(coil7alias)
 #define COIL8_NODE DT_ALIAS(coil8alias)
+
+/*Nodo del RFID*/
+#define RFID_NODE DT_ALIAS(rfid0alias)
+
 #define SUCCESSFUL 0
 #define OK 0
 #define ERROR 1
@@ -44,6 +48,9 @@ static const struct gpio_dt_spec coil6 = GPIO_DT_SPEC_GET(COIL6_NODE, gpios);
 static const struct gpio_dt_spec coil7 = GPIO_DT_SPEC_GET(COIL7_NODE, gpios);
 static const struct gpio_dt_spec coil8 = GPIO_DT_SPEC_GET(COIL8_NODE, gpios);
 
+/*Llamado al pin real del RFID*/
+static const struct gpio_dt_spec rfid0 = GPIO_DT_SPEC_GET(RFID_NODE, gpios);
+
 int leerTabla(int paso[], int posicion){
 	int lectura = paso[posicion];
 	return lectura;
@@ -58,7 +65,7 @@ int led_debug_init(void)
   return SUCCESSFUL;
 }
 
-/* Función que configura los pines como salidas y con valor inicial igual a 0 */
+/* Función que configura los pines como salidas (o entradas) y con valor inicial igual a 0 */
 void pins_config_init(void)
 {
   int ret;
@@ -78,6 +85,11 @@ void pins_config_init(void)
   printk("%d ", ret);
 	ret = gpio_pin_configure_dt(&coil8, GPIO_OUTPUT_LOW);
   printk("%d ", ret);
+
+	/*pin del RFID*/
+	ret = gpio_pin_configure_dt(&rfid0, GPIO_INPUT);
+	printk("%d ", ret);																						/*Si hay un error puede ser acá, no estoy seguro de esto*/
+
 }
 
 void main(void)
@@ -152,6 +164,8 @@ void main(void)
 	// }
 
 	//Si no se mueve lo suficiente, probar antes con while(1)
+	if (&rfid0 == 1){
+
 	while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
 		// ret = gpio_pin_set_dt(&coil1, 1/0)
 		// Cambio el valor de los pines coilX
@@ -237,6 +251,9 @@ count_step=0;
 		//}
 	}
 
-
+}
+else{
+	return;							/* Esto también ni idea, lo puse porque quedaba lendo*/
+}
 
 }

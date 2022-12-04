@@ -26,6 +26,8 @@
     coil7alias = &coil_7_label;
     coil8alias = &coil_8_label;
 
+    /*RFID*/
+    rfid0alias = &rfid_label;
   };
 
   leds_node {
@@ -78,5 +80,11 @@
     coil_8_label: COIL8_NODE {
       gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
     };
+
+    /*RFID*/
+    rfid_label: RFID_NODE{
+      gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+    };
+
   };
 };
