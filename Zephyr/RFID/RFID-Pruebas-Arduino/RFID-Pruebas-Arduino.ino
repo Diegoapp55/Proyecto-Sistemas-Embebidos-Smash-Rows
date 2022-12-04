@@ -2,42 +2,74 @@
   Capitulo 40 de Arduino desde cero en Español.
   Programa que obtiene el UID de la tarjeta o llavero del kit RFID RC522 y muestra 
   en monitor serie. Requiere instalar libreria MFRC522
-
   Autor: bitwiseAr  
-
 */
 
-#include <SPI.h>      // incluye libreria bus SPI
-#include <MFRC522.h>      // incluye libreria especifica para MFRC522
+#include <SPI.h>
+#include <MFRC522.h>
 
-#define RST_PIN  9      // constante para referenciar pin de reset
-#define SS_PIN  10      // constante para referenciar pin de slave select
+#define RST_PIN  9    //Pin 9 para el reset del RC522
+#define SS_PIN  10   //Pin 10 para el SS (SDA) del RC522
+MFRC522 mfrc522(SS_PIN, RST_PIN); ///Creamos el objeto para el RC522
 
-MFRC522 mfrc522(SS_PIN, RST_PIN); // crea objeto mfrc522 enviando pines de slave select y reset
+int GPIO=2;   //pin que vamos a conectar al GPIO de la ESP32
 
 void setup() {
-  Serial.begin(9600);     // inicializa comunicacion por monitor serie a 9600 bps
-  SPI.begin();        // inicializa bus SPI
-  mfrc522.PCD_Init();     // inicializa modulo lector
+  Serial.begin(9600); //Iniciamos La comunicacion serial
+  SPI.begin();        //Iniciamos el Bus SPI
+  mfrc522.PCD_Init(); // Iniciamos el MFRC522
+  Serial.println("Control de acceso:");
 }
 
+byte ActualUID[4]; //almacenará el código del Tag leído
+byte Usuario1[4]= {0x4D, 0x5C, 0x6A, 0x45} ; //código del usuario 1
+byte Usuario2[4]= {0xC1, 0x2F, 0xD6, 0x0E} ; //código del usuario 2
 void loop() {
-  if ( ! mfrc522.PICC_IsNewCardPresent()) // si no hay una tarjeta presente
-    return;         // retorna al loop esperando por una tarjeta
+  // Revisamos si hay nuevas tarjetas  presentes
+  if ( mfrc522.PICC_IsNewCardPresent()) 
+        {  
+      //Seleccionamos una tarjeta
+            if ( mfrc522.PICC_ReadCardSerial()) 
+            {
+                  // Enviamos serialemente su UID
+                  Serial.print(F("Card UID:"));
+                  for (byte i = 0; i < mfrc522.uid.size; i++) {
+                          Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
+                          Serial.print(mfrc522.uid.uidByte[i], HEX);   
+                          ActualUID[i]=mfrc522.uid.uidByte[i];          
+                  } 
+                  Serial.print("     ");                 
+                  //comparamos los UID para determinar si es uno de nuestros usuarios  
+                  if(compareArray(ActualUID,Usuario1)){
+                    Serial.println("Acceso concedido...");
+                    digitalWrite(GPIO, HIGH);
+                    delay(500);
+                    }
+                  else if(compareArray(ActualUID,Usuario2)){
+                    Serial.println("Acceso concedido...");
+                    digitalWrite(GPIO, HIGH);
+                    delay(500);
+                    }
+                  else{
+                    Serial.println("Acceso denegado...");
+                    digitalWrite(GPIO, LOW);
+                    delay(500);
+                  }
+                  // Terminamos la lectura de la tarjeta tarjeta  actual
+                  mfrc522.PICC_HaltA();
+          
+            }
+      
+  }
   
-  if ( ! mfrc522.PICC_ReadCardSerial())   // si no puede obtener datos de la tarjeta
-    return;         // retorna al loop esperando por otra tarjeta
-    
-  Serial.print("UID:");       // muestra texto UID:
-  for (byte i = 0; i < mfrc522.uid.size; i++) { // bucle recorre de a un byte por vez el UID
-    if (mfrc522.uid.uidByte[i] < 0x10){   // si el byte leido es menor a 0x10
-      Serial.print(" 0");     // imprime espacio en blanco y numero cero
-      }
-      else{         // sino
-      Serial.print(" ");      // imprime un espacio en blanco
-      }
-    Serial.print(mfrc522.uid.uidByte[i], HEX);  // imprime el byte del UID leido en hexadecimal  
-  } 
-  Serial.println();       // nueva linea
-  mfrc522.PICC_HaltA();                   // detiene comunicacion con tarjeta
+}
+
+//Función para comparar dos vectores
+ boolean compareArray(byte array1[],byte array2[])
+{
+  if(array1[0] != array2[0])return(false);
+  if(array1[1] != array2[1])return(false);
+  if(array1[2] != array2[2])return(false);
+  if(array1[3] != array2[3])return(false);
+  return(true);
 }
