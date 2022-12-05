@@ -127,8 +127,9 @@ void main(void)
 	while(1){
 		arduino = gpio_pin_get_dt(&rfid0);
 		printk("Lectura=%d, ",arduino);
-		if (gpio_pin_get_dt(&rfid0) == 1){
+		if (gpio_pin_get_dt(&rfid0)==1){
 		llego = 1;
+
 
 		while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
 			// ret = gpio_pin_set_dt(&coil1, 1/0)
