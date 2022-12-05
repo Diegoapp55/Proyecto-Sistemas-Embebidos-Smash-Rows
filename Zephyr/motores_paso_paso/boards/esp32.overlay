@@ -69,7 +69,7 @@
       In8 -> GPIO 14
   */
   coil_5_label: COIL5_NODE {
-      gpios = <&gpio0 21 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 19 GPIO_ACTIVE_LOW>;
     };
     coil_6_label: COIL6_NODE {
       gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
@@ -83,7 +83,7 @@
 
     /*RFID*/
     rfid_label: RFID_NODE{
-      gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
     };
 
   };
