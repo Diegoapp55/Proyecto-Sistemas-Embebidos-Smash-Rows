@@ -23,8 +23,9 @@ void setup() {
 }
 
 byte ActualUID[4]; //almacenará el código del Tag leído
-byte Usuario1[4]= {0x4D, 0x5C, 0x6A, 0x45} ; //código del usuario 1
+byte Usuario1[4]= {0x6D, 0x2C, 0x2C, 0xEB} ; //código del usuario 1  6D 2C 2C EB
 byte Usuario2[4]= {0x62, 0xDB, 0x56, 0x6F} ; //código del usuario 2  62 DB 56 6F
+byte Usuario3[4]= {0xED, 0x18, 0x19, 0xA9} ; //código del usuario 3  ED 18 19 A9
 void loop() {
   // Revisamos si hay nuevas tarjetas  presentes
   if ( mfrc522.PICC_IsNewCardPresent()) 
@@ -42,17 +43,28 @@ void loop() {
                   Serial.print("     ");                 
                   //comparamos los UID para determinar si es uno de nuestros usuarios  
                   if(compareArray(ActualUID,Usuario1)){
-                    Serial.println("Acceso concedido...");
+                    Serial.println("Bienvenido Sergio Guevara");
                     digitalWrite(GPIO, HIGH);
-                    delay(10000);
+                    delay(500);
+                    digitalWrite(GPIO, LOW);
+                    delay(500);
                     }
                   else if(compareArray(ActualUID,Usuario2)){
-                    Serial.println("Acceso concedido...");
+                    Serial.println("Bienvenido Raúl Guzmán");
                     digitalWrite(GPIO, HIGH);
-                    delay(10000);
+                    delay(500);
+                    digitalWrite(GPIO, LOW);
+                    delay(500);
+                    }
+                  else if(compareArray(ActualUID,Usuario3)){
+                    Serial.println("Bienvenido Diego Sánchez");
+                    digitalWrite(GPIO, HIGH);
+                    delay(500);
+                    digitalWrite(GPIO, LOW);
+                    delay(500);
                     }
                   else{
-                    Serial.println("Acceso denegado...");
+                    Serial.println("Acceso denegado...Eduardo");
                     digitalWrite(GPIO, LOW);
                     delay(500);
                   }
