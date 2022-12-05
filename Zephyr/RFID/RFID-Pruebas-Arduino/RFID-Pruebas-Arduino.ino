@@ -23,7 +23,9 @@ void setup() {
 
 byte ActualUID[4]; //almacenará el código del Tag leído
 byte Usuario1[4]= {0x4D, 0x5C, 0x6A, 0x45} ; //código del usuario 1
-byte Usuario2[4]= {0xC1, 0x2F, 0xD6, 0x0E} ; //código del usuario 2
+byte Usuario2[4]= {0xED, 0x18, 0x19, 0xA9} ; //código del usuario 2
+//Carnet Diego: ED 18 19 A9
+
 void loop() {
   // Revisamos si hay nuevas tarjetas  presentes
   if ( mfrc522.PICC_IsNewCardPresent()) 
