@@ -83,7 +83,7 @@
 
     /*RFID*/
     rfid_label: RFID_NODE{
-      gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+      gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
     };
 
   };
