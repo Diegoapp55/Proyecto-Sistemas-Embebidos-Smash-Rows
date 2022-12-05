@@ -15,6 +15,7 @@ MFRC522 mfrc522(SS_PIN, RST_PIN); ///Creamos el objeto para el RC522
 int GPIO=2;   //pin que vamos a conectar al GPIO de la ESP32
 
 void setup() {
+  pinMode(2, OUTPUT);
   Serial.begin(9600); //Iniciamos La comunicacion serial
   SPI.begin();        //Iniciamos el Bus SPI
   mfrc522.PCD_Init(); // Iniciamos el MFRC522
@@ -23,9 +24,7 @@ void setup() {
 
 byte ActualUID[4]; //almacenará el código del Tag leído
 byte Usuario1[4]= {0x4D, 0x5C, 0x6A, 0x45} ; //código del usuario 1
-byte Usuario2[4]= {0xED, 0x18, 0x19, 0xA9} ; //código del usuario 2
-//Carnet Diego: ED 18 19 A9
-
+byte Usuario2[4]= {0x62, 0xDB, 0x56, 0x6F} ; //código del usuario 2  62 DB 56 6F
 void loop() {
   // Revisamos si hay nuevas tarjetas  presentes
   if ( mfrc522.PICC_IsNewCardPresent()) 
@@ -45,12 +44,12 @@ void loop() {
                   if(compareArray(ActualUID,Usuario1)){
                     Serial.println("Acceso concedido...");
                     digitalWrite(GPIO, HIGH);
-                    delay(500);
+                    delay(10000);
                     }
                   else if(compareArray(ActualUID,Usuario2)){
                     Serial.println("Acceso concedido...");
                     digitalWrite(GPIO, HIGH);
-                    delay(500);
+                    delay(10000);
                     }
                   else{
                     Serial.println("Acceso denegado...");
