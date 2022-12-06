@@ -2560,6 +2560,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable eduardo
 drawable exit
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -2641,6 +2642,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable raul
 drawable round_button
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2687,7 +2689,6 @@ id Scanner
 id Sergio
 id TOP_END
 id TOP_START
-id UserCount
 id UserDrugs
 id UserId
 id UserLastName

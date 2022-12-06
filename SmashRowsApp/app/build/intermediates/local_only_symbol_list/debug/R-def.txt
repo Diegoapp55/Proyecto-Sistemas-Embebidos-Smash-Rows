@@ -10,10 +10,12 @@ color teal_200
 color teal_700
 color white
 drawable bx_cog
+drawable eduardo
 drawable exit
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
+drawable raul
 drawable round_button
 font comic_neue_bold_italic
 id AboutUs
@@ -43,7 +45,6 @@ id MainTitle
 id Raul
 id Scanner
 id Sergio
-id UserCount
 id UserDrugs
 id UserId
 id UserLastName
