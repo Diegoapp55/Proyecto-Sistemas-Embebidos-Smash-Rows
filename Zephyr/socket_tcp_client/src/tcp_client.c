@@ -18,7 +18,7 @@ static ssize_t sendall(int sock, const void *buf, size_t len)
 
 	return 0;
 }
- 
+
 int tcp_client_start(void)
 {
   LOG_MODULE_DECLARE(main, CONFIG_LOG_DEFAULT_LEVEL);

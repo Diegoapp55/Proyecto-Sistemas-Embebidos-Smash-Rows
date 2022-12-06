@@ -11,4 +11,4 @@ target_sources_ifdef(CONFIG_WIFI app PRIVATE src/wifi.c)
 target_sources(app PRIVATE src/dhcp.c)
 target_sources(app PRIVATE src/tcp_client.c)
 target_sources(app PRIVATE src/main.c)
-target_sources(app PRIVATE tcp_linux_server/server.c)
+
