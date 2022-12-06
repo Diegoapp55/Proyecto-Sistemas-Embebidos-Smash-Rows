@@ -15,7 +15,7 @@ drawable exit
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
-drawable raul
+drawable raulandres
 drawable round_button
 font comic_neue_bold_italic
 id AboutUs

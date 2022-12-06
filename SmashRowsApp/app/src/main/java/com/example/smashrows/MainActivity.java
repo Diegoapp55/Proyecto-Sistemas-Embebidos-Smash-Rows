@@ -20,7 +20,10 @@ public class MainActivity extends AppCompatActivity {
     }
     //Button to exit the application
     public void exitApp(View view) {
-    finish();
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     //Button Insert Document --> Insert Document Layout
@@ -46,6 +49,5 @@ public class MainActivity extends AppCompatActivity {
         Intent config= new Intent(this, ConfigDB.class);
         startActivity(config);
     }
-
 
 }

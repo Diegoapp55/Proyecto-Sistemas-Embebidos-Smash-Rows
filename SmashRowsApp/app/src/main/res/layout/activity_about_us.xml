@@ -47,18 +47,24 @@
         android:layout_height="wrap_content"
         android:text="Jonny Cubides"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="60dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.440"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Docente"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="90dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.390"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
 
     <ImageView
         android:id="@+id/Sergio"
@@ -77,18 +83,24 @@
         android:layout_height="wrap_content"
         android:text="Sergio Andres Guevara Contreras"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="180dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.250" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Estudiante Ingeniería Electrónica"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.680"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.290" />
 
     <ImageView
         android:id="@+id/Raul"
@@ -99,7 +111,7 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Sergio"
-        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintVertical_bias="0.27"
         app:srcCompat="@drawable/raulandres" />
 
     <TextView
@@ -107,18 +119,24 @@
         android:layout_height="wrap_content"
         android:text="Raúl Andres Guzman Mayorga"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="300dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.420" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Estudiante Ingeniería Electrónica"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
 
     <ImageView
         android:id="@+id/Diego"
@@ -129,7 +147,7 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Raul"
-        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintVertical_bias="0.38"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -137,18 +155,24 @@
         android:layout_height="wrap_content"
         android:text="Diego Alejandro Sanchez Mendoza"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="410dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.591" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Estudiante Ingeniería Electrónica"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="440dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.630" />
 
     <ImageView
         android:id="@+id/Eduardo"
@@ -159,7 +183,7 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/Diego"
-        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintVertical_bias="0.6"
         app:srcCompat="@drawable/eduardo" />
 
     <TextView
@@ -167,18 +191,24 @@
         android:layout_height="wrap_content"
         android:text="Eduardo Toro Bernal"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="520dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Estudiante Ingeniería Electrónica"
         android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="550dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
 
     <Button
         android:id="@+id/ButtonBackUs"
