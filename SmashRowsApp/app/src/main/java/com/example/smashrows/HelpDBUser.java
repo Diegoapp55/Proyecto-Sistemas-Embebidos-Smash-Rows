@@ -14,7 +14,6 @@ public class HelpDBUser extends SQLiteOpenHelper {
         public static final String COLUMN_NAME = "nombre";
         public static final String COLUMN_LAST_NAME = "apellido";
         public static final String COLUMN_DRUGS = "medicamento";
-        public static final String COLUMN_COUNT = "cantidad";
 
         //Sentencia para crear la tabla
         private static final String CREATE_TABLE_USERS =
@@ -22,8 +21,7 @@ public class HelpDBUser extends SQLiteOpenHelper {
                         DATATABLE.COLUMN_ID + " INTEGER PRIMARY KEY," +
                         DATATABLE.COLUMN_NAME + " TEXT," +
                         DATATABLE.COLUMN_LAST_NAME + " TEXT,"+
-                        DATATABLE.COLUMN_DRUGS + " TEXT," +
-                        DATATABLE.COLUMN_COUNT + " TEXT)";
+                        DATATABLE.COLUMN_DRUGS + " TEXT)";
 
         //Sentencia para borrar la tabla
         private static final String SQL_DELETE_ENTRIES =

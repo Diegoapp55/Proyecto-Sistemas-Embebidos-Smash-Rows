@@ -16,7 +16,7 @@ public class ConfigDB extends AppCompatActivity {
 
     //Botones Usuarios
     Button BtSaveUser, BtSearchUser, BtUpdateUser, BtDeleteUser;
-    EditText UserId, UserName, UserLastName, UserDrugs, UserCount;
+    EditText UserId, UserName, UserLastName, UserDrugs;
 
     //Botones Medicamentos
     Button BtSaveDrugs, BtSearchDrugs, BtUpdateDrugs, BtDeleteDrugs;
@@ -37,7 +37,6 @@ public class ConfigDB extends AppCompatActivity {
         UserName = (EditText)findViewById(R.id.UserName);
         UserLastName = (EditText)findViewById(R.id.UserLastName);
         UserDrugs = (EditText)findViewById(R.id.UserDrugs);
-        UserCount = (EditText)findViewById(R.id.UserCount);
 
         //Instanciar elementos de la interfaz Medicamentos
         BtSaveDrugs = (Button)findViewById(R.id.BtSaveDrugs);
@@ -66,7 +65,6 @@ public class ConfigDB extends AppCompatActivity {
                 values.put(HelpDBUser.DATATABLE.COLUMN_NAME, UserName.getText().toString());
                 values.put(HelpDBUser.DATATABLE.COLUMN_LAST_NAME, UserLastName.getText().toString());
                 values.put(HelpDBUser.DATATABLE.COLUMN_DRUGS, UserDrugs.getText().toString());
-                values.put(HelpDBUser.DATATABLE.COLUMN_COUNT, UserCount.getText().toString());
 
                 long IdSaveUser = db_users.insert(HelpDBUser.DATATABLE.TABLE_NAME, HelpDBUser.DATATABLE.COLUMN_ID, values);
                 Toast.makeText(getApplicationContext(), "Se guardo el usuario " + IdSaveUser, Toast.LENGTH_LONG).show();
@@ -79,14 +77,13 @@ public class ConfigDB extends AppCompatActivity {
                 //Configurar la DB para leer
                 SQLiteDatabase db_users = helpDBUser.getReadableDatabase();
                 String [] argsel = {UserId.getText().toString()};
-                String [] projection = {HelpDBUser.DATATABLE.COLUMN_NAME, HelpDBUser.DATATABLE.COLUMN_LAST_NAME, HelpDBUser.DATATABLE.COLUMN_DRUGS, HelpDBUser.DATATABLE.COLUMN_COUNT};
-                Cursor cursor = db_users.query(HelpDBUser.DATATABLE.TABLE_NAME, projection, HelpDBUser.DATATABLE.COLUMN_ID + " = ?", argsel,null,null,null);
+                String [] projection = {HelpDBUser.DATATABLE.COLUMN_NAME, HelpDBUser.DATATABLE.COLUMN_LAST_NAME, HelpDBUser.DATATABLE.COLUMN_DRUGS};
+                Cursor cursor = db_users.query(HelpDBUser.DATATABLE.TABLE_NAME, projection, HelpDBUser.DATATABLE.COLUMN_ID + " LIKE ?", argsel,null,null,null);
 
                 cursor.moveToFirst();
                 UserName.setText(cursor.getString(0));
                 UserLastName.setText(cursor.getString(1));
                 UserDrugs.setText(cursor.getString(2));
-                UserCount.setText(cursor.getString(3));
             }
         });
 
@@ -99,7 +96,6 @@ public class ConfigDB extends AppCompatActivity {
                 values.put(HelpDBUser.DATATABLE.COLUMN_NAME, UserName.getText().toString());
                 values.put(HelpDBUser.DATATABLE.COLUMN_LAST_NAME, UserLastName.getText().toString());
                 values.put(HelpDBUser.DATATABLE.COLUMN_DRUGS, UserDrugs.getText().toString());
-                values.put(HelpDBUser.DATATABLE.COLUMN_COUNT, UserCount.getText().toString());
                 String [] argsel = {UserId.getText().toString()};
                 String selection = HelpDBUser.DATATABLE.COLUMN_ID + " = ?";
                 int count = db_users.update(HelpDBUser.DATATABLE.TABLE_NAME, values, selection, argsel);
@@ -132,28 +128,44 @@ public class ConfigDB extends AppCompatActivity {
             }
         });
 
-        BtSearchUser.setOnClickListener(new View.OnClickListener() {
+        BtSearchDrugs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Configurar la DB para leer
+                SQLiteDatabase db_drugs = helpDBDrugs.getReadableDatabase();
+                String [] argsel = {DrugsId.getText().toString()};
+                String [] projection = {HelpDBDrugs.DATATABLE.COLUMN_DRUGS, HelpDBDrugs.DATATABLE.COLUMN_COUNT};
+                Cursor cursor = db_drugs.query(HelpDBDrugs.DATATABLE.TABLE_NAME, projection, HelpDBDrugs.DATATABLE.COLUMN_ID + " LIKE ?", argsel,null,null,null);
 
+                cursor.moveToFirst();
+                DrugsName.setText(cursor.getString(0));
+                DrugsCount.setText(cursor.getString(1));
             }
         });
 
-        BtUpdateUser.setOnClickListener(new View.OnClickListener() {
+        BtUpdateDrugs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                SQLiteDatabase db_drugs = helpDBDrugs.getWritableDatabase();
+                ContentValues values = new ContentValues();
+                values.put(HelpDBDrugs.DATATABLE.COLUMN_ID, DrugsId.getText().toString());
+                values.put(HelpDBDrugs.DATATABLE.COLUMN_DRUGS, DrugsName.getText().toString());
+                values.put(HelpDBDrugs.DATATABLE.COLUMN_COUNT, DrugsCount.getText().toString());
+                String [] argsel = {DrugsId.getText().toString()};
+                String selection = HelpDBDrugs.DATATABLE.COLUMN_ID + " = ?";
+                int count = db_drugs.update(HelpDBDrugs.DATATABLE.TABLE_NAME, values, selection, argsel);
             }
         });
 
-        BtDeleteUser.setOnClickListener(new View.OnClickListener() {
+        BtDeleteDrugs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                SQLiteDatabase db_drugs = helpDBDrugs.getWritableDatabase();
+                String selection = HelpDBDrugs.DATATABLE.COLUMN_ID + " = ?";
+                String [] argsel = {DrugsId.getText().toString()};
+                db_drugs.delete(HelpDBDrugs.DATATABLE.TABLE_NAME, selection, argsel);
             }
         });
-
-
     }
 
     //Button Back MainLayout
