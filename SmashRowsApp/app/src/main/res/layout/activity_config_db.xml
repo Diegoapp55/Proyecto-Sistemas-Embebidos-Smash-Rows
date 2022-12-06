@@ -88,21 +88,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/UserLastName"/>
 
-    <EditText
-        android:id="@+id/UserCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Ingresar cantidad de medicamento"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:layout_margin="10dp"
-        android:fontFamily="@font/comic_neue_bold_italic"
-        app:layout_constraintVertical_bias="0.09"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/UserDrugs"/>
-
     <Button
         android:id="@+id/BtSaveUser"
         android:layout_width="wrap_content"
@@ -115,7 +100,7 @@
         app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <Button
         android:id="@+id/BtSearchUser"
@@ -129,7 +114,7 @@
         app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <Button
         android:id="@+id/BtUpdateUser"
@@ -143,7 +128,7 @@
         app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <Button
         android:id="@+id/BtDeleteUser"
@@ -157,7 +142,7 @@
         app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <TextView
         android:id="@+id/DBDrugs"
@@ -239,7 +224,7 @@
         app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintVertical_bias="0.86" />
 
     <Button
         android:id="@+id/BtSearchDrugs"
@@ -253,7 +238,7 @@
         app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintVertical_bias="0.86" />
 
     <Button
         android:id="@+id/BtUpdateDrugs"
@@ -267,7 +252,7 @@
         app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintVertical_bias="0.86" />
 
     <Button
         android:id="@+id/BtDeleteDrugs"
@@ -281,7 +266,7 @@
         app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintVertical_bias="0.86" />
 
     <Button
         android:id="@+id/ButtonBackUs"

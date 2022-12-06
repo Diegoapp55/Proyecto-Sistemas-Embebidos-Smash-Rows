@@ -90,7 +90,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Descargas/Logo.jpg" />
+                                                <entry key="imagePath" value="$USER_HOME$/Descargas/logo.png" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
