@@ -63,7 +63,7 @@ int main(int argc, char const* argv[])
 	valread = read(new_socket, buffer, 1024);
 	printf("%s \n", buffer);
 	send(new_socket, hello, strlen(hello), 0);
-	printf("Por favor, ingrese su número de documento y contraseña\n");
+	printf("Por favor, ingrese su número de documento\n");
 
 	// closing the connected socket
 	 close(new_socket);
