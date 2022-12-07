@@ -4,6 +4,10 @@
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/layout/activity_scanner_document.xml"
     },
     {
+        "merged": "com.example.smashrows.app-merged_res-29:/layout_activity_inser_document.xml.flat",
+        "source": "com.example.smashrows.app-main-31:/layout/activity_inser_document.xml"
+    },
+    {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/drawable-mdpi_bx_cog.xml.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/drawable-mdpi/bx_cog.xml"
     },
@@ -102,10 +106,6 @@
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.smashrows.app-merged_res-29:/layout_activity_about_us.xml.flat",
-        "source": "com.example.smashrows.app-main-31:/layout/activity_about_us.xml"
     },
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/layout_activity_config_db.xml.flat",

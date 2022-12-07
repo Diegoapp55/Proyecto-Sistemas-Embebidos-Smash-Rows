@@ -2662,11 +2662,15 @@ int id BtUpdateUser 0x7f0801ff
 int id ButtonBackInsert 0x7f0801e5
 int id ButtonBackScanner 0x7f0801e6
 int id ButtonBackUs 0x7f0801e7
+int id ButtonCancel 0x7f080205
+int id ButtonClaim 0x7f080206
+int id ButtonSearch 0x7f080207
 int id CTRL 0x7f080003
 int id Config 0x7f0801ed
 int id DBDrugs 0x7f080200
 int id DBUsers 0x7f0801f7
 int id Diego 0x7f0801e8
+int id Drug 0x7f080208
 int id DrugsCount 0x7f080201
 int id DrugsId 0x7f080202
 int id DrugsName 0x7f080203
@@ -2675,9 +2679,11 @@ int id Exit 0x7f0801e2
 int id FUNCTION 0x7f080004
 int id InsertDocument 0x7f0801dc
 int id Jonny 0x7f0801ea
+int id LastName 0x7f080209
 int id META 0x7f080005
 int id MainTitle 0x7f0801dd
 int id NO_DEBUG 0x7f080006
+int id Name 0x7f08020a
 int id Raul 0x7f0801eb
 int id SHIFT 0x7f080007
 int id SHOW_ALL 0x7f080008

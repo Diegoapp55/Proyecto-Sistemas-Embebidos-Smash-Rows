@@ -30,10 +30,14 @@ id BtUpdateUser
 id ButtonBackInsert
 id ButtonBackScanner
 id ButtonBackUs
+id ButtonCancel
+id ButtonClaim
+id ButtonSearch
 id Config
 id DBDrugs
 id DBUsers
 id Diego
+id Drug
 id DrugsCount
 id DrugsId
 id DrugsName
@@ -41,7 +45,9 @@ id Eduardo
 id Exit
 id InsertDocument
 id Jonny
+id LastName
 id MainTitle
+id Name
 id Raul
 id Scanner
 id Sergio

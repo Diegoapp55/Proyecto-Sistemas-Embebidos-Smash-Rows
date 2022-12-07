@@ -53,7 +53,26 @@ public class InserDocument extends AppCompatActivity {
             }
         });
 
-        //Buton cancelar reclamo de medicamentos
+        //Boton reclamar medicamento
+        BtClaim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alerta = new AlertDialog.Builder(InserDocument.this);
+                alerta.setMessage("Por favor vaya al área de dispensación.")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                finish();
+                            }
+                        });
+                AlertDialog titulo = alerta.create();
+                titulo.setTitle("Dispensando...");
+                titulo.show();
+            }
+        });
+
+        //Boton cancelar reclamo de medicamentos
         BtCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

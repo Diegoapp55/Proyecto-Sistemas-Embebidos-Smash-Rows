@@ -2663,11 +2663,15 @@ id BtUpdateUser
 id ButtonBackInsert
 id ButtonBackScanner
 id ButtonBackUs
+id ButtonCancel
+id ButtonClaim
+id ButtonSearch
 id CTRL
 id Config
 id DBDrugs
 id DBUsers
 id Diego
+id Drug
 id DrugsCount
 id DrugsId
 id DrugsName
@@ -2676,9 +2680,11 @@ id Exit
 id FUNCTION
 id InsertDocument
 id Jonny
+id LastName
 id META
 id MainTitle
 id NO_DEBUG
+id Name
 id Raul
 id SHIFT
 id SHOW_ALL
