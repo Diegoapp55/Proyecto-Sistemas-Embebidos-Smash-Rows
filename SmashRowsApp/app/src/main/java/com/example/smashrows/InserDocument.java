@@ -1,7 +1,9 @@
 package com.example.smashrows;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -51,6 +53,30 @@ public class InserDocument extends AppCompatActivity {
             }
         });
 
+        //Buton cancelar reclamo de medicamentos
+        BtCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alerta = new AlertDialog.Builder(InserDocument.this);
+                alerta.setMessage("¿Desea cancelar su solicitud?")
+                        .setCancelable(false)
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                            }
+                        });
+                AlertDialog titulo = alerta.create();
+                titulo.setTitle("Cancelar");
+                titulo.show();
+            }
+        });
 
     }
 
