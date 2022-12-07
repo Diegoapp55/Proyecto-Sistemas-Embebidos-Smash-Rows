@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Button Config --> ConfigDB Layout
     public void config(View view){
-        Intent config= new Intent(this, Login.class);
+        Intent config= new Intent(this, ConfigDB.class);
         startActivity(config);
     }
 

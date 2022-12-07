@@ -1,4 +1,4 @@
-#Tue Dec 06 22:00:42 COT 2022
+#Tue Dec 06 22:55:41 COT 2022
 base.2=/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
 path.2=14/classes.dex
 base.1=/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex

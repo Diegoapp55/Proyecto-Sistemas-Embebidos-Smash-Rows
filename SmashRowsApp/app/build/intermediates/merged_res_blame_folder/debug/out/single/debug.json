@@ -8,6 +8,10 @@
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/drawable-mdpi/bx_cog.xml"
     },
     {
+        "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/drawable_jonny.jpeg.flat",
+        "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/drawable/jonny.jpeg"
+    },
+    {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/drawable-mdpi_exit.png.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/drawable-mdpi/exit.png"
     },
@@ -22,10 +26,6 @@
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/layout_activity_about_us.xml.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/layout/activity_about_us.xml"
-    },
-    {
-        "merged": "com.example.smashrows.app-merged_res-29:/drawable_jonny.jpeg.flat",
-        "source": "com.example.smashrows.app-main-31:/drawable/jonny.jpeg"
     },
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
@@ -126,6 +126,10 @@
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.smashrows.app-merged_res-29:/drawable_diego.jpeg.flat",
+        "source": "com.example.smashrows.app-debug-30:/drawable/diego.jpeg"
     },
     {
         "merged": "/home/etorob/.gradle/daemon/7.4/com.example.smashrows.app-merged_res-29:/font_comic_neue_bold_italic.ttf.flat",
