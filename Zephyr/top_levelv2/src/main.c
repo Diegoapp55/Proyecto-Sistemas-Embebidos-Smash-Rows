@@ -145,129 +145,128 @@ void main(void)
 	k_msleep(1000);
 
 	tcp_client_start();
-// printf("prueba1\n");
-
-	int ret = 0;
-	int llego = 0;
-	int arduino = 0;
-	int vel_motor=1000;
-	int count_step = 0;
-	int round_step = 4076;
-
-
-	const int numberSteps = 3200;
-	const int tableSteps[4] = {0x8, 0x4, 0x2, 0x1};
+  motores_star();
+printf("prueba1\n");
+  //
+	// int ret = 0;
+	// int llego = 0;
+	// int arduino = 0;
+	// int vel_motor=1000;
+	// int count_step = 0;
+	// int round_step = 4076;
+  //
+  //
+	// const int numberSteps = 3200;
+	// const int tableSteps[4] = {0x8, 0x4, 0x2, 0x1};
   // printf("prueba2\n");
-	//Si no se mueve lo suficiente, probar antes con while(1)
-	while(1){
-		arduino = gpio_pin_get_dt(&rfid0);
-		// printk("Lectura=%d \n, ",arduino);
-    // printf("prueba3");
-		if (gpio_pin_get_dt(&rfid0)==1){
-		llego = 1;
-    // printf("prueba4\n");
+	// //Si no se mueve lo suficiente, probar antes con while(1)
+	// while(1){
+	// 	arduino = gpio_pin_get_dt(&rfid0);
+	// 	printk("Lectura=%d, ",arduino);
+  //   printf("prueba3");
+		// if (gpio_pin_get_dt(&rfid0)==1){
+		// llego = 1;
+    // printf("prueba1\n", );
 
 //
-		while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
-			// ret = gpio_pin_set_dt(&coil1, 1/0)
-			// Cambio el valor de los pines coilX
-      llego=0;
-      // printf("prueba5\n");
-				for (int i = 0; i < 4; i++) {
-          // printf("prueba6\n");
-					switch (tableSteps[i]) {
-						case 0x8:
-							gpio_pin_set_dt(&coil1, 0);
-							gpio_pin_set_dt(&coil2, 1);
-							gpio_pin_set_dt(&coil3, 1);
-							gpio_pin_set_dt(&coil4, 1);
-							break;
-						case 0x4:
-							gpio_pin_set_dt(&coil1, 1);
-							gpio_pin_set_dt(&coil2, 0);
-							gpio_pin_set_dt(&coil3, 1);
-							gpio_pin_set_dt(&coil4, 1);
-							break;
-						case 0x2:
-							gpio_pin_set_dt(&coil1, 1);
-							gpio_pin_set_dt(&coil2, 1);
-							gpio_pin_set_dt(&coil3, 0);
-							gpio_pin_set_dt(&coil4, 1);
-							break;
-						case 0x1:
-							gpio_pin_set_dt(&coil1, 1);
-							gpio_pin_set_dt(&coil2, 1);
-							gpio_pin_set_dt(&coil3, 1);
-							gpio_pin_set_dt(&coil4, 0);
-							break;
-					}
-				//	k_msleep(10*SLEEP_TIME);
-					count_step++; //Revisar si esto está bien o es mejor ponerlo fuera del for para que cuente vueltasy no cada paso
-				}
-
+// 		while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
+// 			// ret = gpio_pin_set_dt(&coil1, 1/0)
+// 			// Cambio el valor de los pines coilX
+//       llego=0;
+//       printf("prueba1\n");
+// // 				for (int i = 0; i < 4; i++) {
+// // 					switch (tableSteps[i]) {
+// // 						case 0x8:
+// // 							gpio_pin_set_dt(&coil1, 0);
+// // 							gpio_pin_set_dt(&coil2, 1);
+// // 							gpio_pin_set_dt(&coil3, 1);
+// // 							gpio_pin_set_dt(&coil4, 1);
+// // 							break;
+// // 						case 0x4:
+// // 							gpio_pin_set_dt(&coil1, 1);
+// // 							gpio_pin_set_dt(&coil2, 0);
+// // 							gpio_pin_set_dt(&coil3, 1);
+// // 							gpio_pin_set_dt(&coil4, 1);
+// // 							break;
+// // 						case 0x2:
+// // 							gpio_pin_set_dt(&coil1, 1);
+// // 							gpio_pin_set_dt(&coil2, 1);
+// // 							gpio_pin_set_dt(&coil3, 0);
+// // 							gpio_pin_set_dt(&coil4, 1);
+// // 							break;
+// // 						case 0x1:
+// // 							gpio_pin_set_dt(&coil1, 1);
+// // 							gpio_pin_set_dt(&coil2, 1);
+// // 							gpio_pin_set_dt(&coil3, 1);
+// // 							gpio_pin_set_dt(&coil4, 0);
+// // 							break;
+// // 					}
+// 					k_msleep(10*SLEEP_TIME);
+// 					count_step++; //Revisar si esto está bien o es mejor ponerlo fuera del for para que cuente vueltasy no cada paso
+// 				}
+//
 //
 // 			// ret = gpio_pin_toggle_dt(&led);
 // 			// if (ret < 0) {
 // 			// 	return;
 // 			// }
- 		}
+// 		}
 //
 // 	k_msleep(5*SLEEP_TIME);
-	count_step=0;
-
-		while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
-			// ret = gpio_pin_set_dt(&coil1, 1/0)
-			// Cambio el valor de los pines coilX
-				for (int i = 0; i < 4; i++) {
-          // printf("prueba7\n");
-					switch (tableSteps[i]) {
-						case 0x8:
-							gpio_pin_set_dt(&coil5, 0);
-							gpio_pin_set_dt(&coil6, 1);
-							gpio_pin_set_dt(&coil7, 1);
-							gpio_pin_set_dt(&coil8, 1);
-							break;
-						case 0x4:
-							gpio_pin_set_dt(&coil5, 1);
-							gpio_pin_set_dt(&coil6, 0);
-							gpio_pin_set_dt(&coil7, 1);
-							gpio_pin_set_dt(&coil8, 1);
-							break;
-						case 0x2:
-							gpio_pin_set_dt(&coil5, 1);
-							gpio_pin_set_dt(&coil6, 1);
-							gpio_pin_set_dt(&coil7, 0);
-							gpio_pin_set_dt(&coil8, 1);
-							break;
-						case 0x1:
-							gpio_pin_set_dt(&coil5, 1);
-							gpio_pin_set_dt(&coil6, 1);
-							gpio_pin_set_dt(&coil7, 1);
-							gpio_pin_set_dt(&coil8, 0);
-							break;
-					}
+// 	count_step=0;
+//
+// 		while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
+// 			// ret = gpio_pin_set_dt(&coil1, 1/0)
+// 			// Cambio el valor de los pines coilX
+// 				for (int i = 0; i < 4; i++) {
+// 					switch (tableSteps[i]) {
+// 						case 0x8:
+// 							gpio_pin_set_dt(&coil5, 0);
+// 							gpio_pin_set_dt(&coil6, 1);
+// 							gpio_pin_set_dt(&coil7, 1);
+// 							gpio_pin_set_dt(&coil8, 1);
+// 							break;
+// 						case 0x4:
+// 							gpio_pin_set_dt(&coil5, 1);
+// 							gpio_pin_set_dt(&coil6, 0);
+// 							gpio_pin_set_dt(&coil7, 1);
+// 							gpio_pin_set_dt(&coil8, 1);
+// 							break;
+// 						case 0x2:
+// 							gpio_pin_set_dt(&coil5, 1);
+// 							gpio_pin_set_dt(&coil6, 1);
+// 							gpio_pin_set_dt(&coil7, 0);
+// 							gpio_pin_set_dt(&coil8, 1);
+// 							break;
+// 						case 0x1:
+// 							gpio_pin_set_dt(&coil5, 1);
+// 							gpio_pin_set_dt(&coil6, 1);
+// 							gpio_pin_set_dt(&coil7, 1);
+// 							gpio_pin_set_dt(&coil8, 0);
+// 							break;
+// 					}
 // 					k_msleep(SLEEP_TIME);
-					count_step++; //Revisar si esto está bien o es mejor ponerlo fuera del for para que cuente vueltasy no cada paso
-				}
+// 					count_step++; //Revisar si esto está bien o es mejor ponerlo fuera del for para que cuente vueltasy no cada paso
+// 				}
 //
 //
 // 			//ret = gpio_pin_toggle_dt(&led);
 // 			//if (ret < 0) {
 // 			//	return;
 // 			//}
-		}
+// 		}
 //
 // 		k_msleep(5*SLEEP_TIME);
-		count_step=0;
-
-}
+// 		count_step=0;
+//
+//	}
 // 	else{
 // 		llego = 0;
 //
 // 		// return;							/* Esto también ni idea, lo puse porque quedaba lendo*/
-//   }
-
-  k_msleep(10*SLEEP_TIME);
-	// printk("Llego=%d\n", llego);
-}
+// 	}
+//
+//
+// 	//printk("Llego=%d\n", llego);
+// }
 }

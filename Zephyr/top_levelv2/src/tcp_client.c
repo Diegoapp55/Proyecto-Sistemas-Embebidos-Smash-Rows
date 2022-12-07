@@ -66,7 +66,7 @@ int tcp_client_start(void)
   }
 
   sendall(sock, hello, strlen(hello));
-  LOG_INF("Por favor, ingrese su número de documento y contraseña");
+  LOG_INF("Hello message sent");
 
 
 

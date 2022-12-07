@@ -4,22 +4,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-
- #include <zephyr/kernel.h>
- #include <zephyr/drivers/gpio.h>
- #include <esp_log.h>
-
-#include <stdio.h>
-#include <zephyr/logging/log.h>
-LOG_MODULE_REGISTER(main, CONFIG_LOG_DEFAULT_LEVEL);
-/* LOG_MODULE_REGISTER(main, CONFIG_LOG_DEFAULT_LEVEL); */
-/* LOG_MODULE_DECLARE(main, CONFIG_LOG_DEFAULT_LEVEL); */
-
-#include "wifi.h"
-#include "dhcp.h"
-#include "tcp_client.h"
-
-
+#include <zephyr/kernel.h>
+#include <zephyr/drivers/gpio.h>
+#include <esp_log.h>
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME   3
@@ -66,7 +53,6 @@ static const struct gpio_dt_spec rfid0 = GPIO_DT_SPEC_GET(RFID_NODE, gpios);
 
 int leerTabla(int paso[], int posicion){
 	int lectura = paso[posicion];
-  printf("prueba2\n");
 	return lectura;
 }
 
@@ -106,13 +92,19 @@ void pins_config_init(void)
 
 }
 
-
-
-/* A partir de aquí modificamos el void*/
-
-
-void main(void)
+int motores_star(void)
 {
+	int ret = 0;
+	int llego = 0;
+	int arduino = 0;
+	int vel_motor=1000;
+	int count_step = 0;
+	int round_step = 4076;
+
+
+	const int numberSteps = 3200;
+	const int tableSteps[4] = {0x8, 0x4, 0x2, 0x1};
+
 	/*Lo del blink para depurar*/
 	/* if (!device_is_ready(led.port)) { */
 	/* 	return; */
@@ -131,50 +123,18 @@ void main(void)
   /* Iniciar steppers */
   pins_config_init();
 
-	printf("aviso1\n");
-	LOG_INF("WiFi demo");
-
-	wifi_connect();
-
-	dhcpv4_startup();
-
-	LOG_INF("Should have DHCPv4 lease at this point.");
-
-	LOG_INF("Start tcp_client_start");
-
-	k_msleep(1000);
-
-	tcp_client_start();
-// printf("prueba1\n");
-
-	int ret = 0;
-	int llego = 0;
-	int arduino = 0;
-	int vel_motor=1000;
-	int count_step = 0;
-	int round_step = 4076;
-
-
-	const int numberSteps = 3200;
-	const int tableSteps[4] = {0x8, 0x4, 0x2, 0x1};
-  // printf("prueba2\n");
 	//Si no se mueve lo suficiente, probar antes con while(1)
 	while(1){
 		arduino = gpio_pin_get_dt(&rfid0);
-		// printk("Lectura=%d \n, ",arduino);
-    // printf("prueba3");
+		printk("Lectura=%d, ",arduino);
 		if (gpio_pin_get_dt(&rfid0)==1){
 		llego = 1;
-    // printf("prueba4\n");
 
-//
+
 		while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
 			// ret = gpio_pin_set_dt(&coil1, 1/0)
 			// Cambio el valor de los pines coilX
-      llego=0;
-      // printf("prueba5\n");
 				for (int i = 0; i < 4; i++) {
-          // printf("prueba6\n");
 					switch (tableSteps[i]) {
 						case 0x8:
 							gpio_pin_set_dt(&coil1, 0);
@@ -201,25 +161,24 @@ void main(void)
 							gpio_pin_set_dt(&coil4, 0);
 							break;
 					}
-				//	k_msleep(10*SLEEP_TIME);
+					k_msleep(SLEEP_TIME);
 					count_step++; //Revisar si esto está bien o es mejor ponerlo fuera del for para que cuente vueltasy no cada paso
 				}
 
-//
-// 			// ret = gpio_pin_toggle_dt(&led);
-// 			// if (ret < 0) {
-// 			// 	return;
-// 			// }
- 		}
-//
-// 	k_msleep(5*SLEEP_TIME);
+
+			// ret = gpio_pin_toggle_dt(&led);
+			// if (ret < 0) {
+			// 	return;
+			// }
+		}
+
+	k_msleep(5*SLEEP_TIME);
 	count_step=0;
 
 		while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
 			// ret = gpio_pin_set_dt(&coil1, 1/0)
 			// Cambio el valor de los pines coilX
 				for (int i = 0; i < 4; i++) {
-          // printf("prueba7\n");
 					switch (tableSteps[i]) {
 						case 0x8:
 							gpio_pin_set_dt(&coil5, 0);
@@ -246,28 +205,25 @@ void main(void)
 							gpio_pin_set_dt(&coil8, 0);
 							break;
 					}
-// 					k_msleep(SLEEP_TIME);
+					k_msleep(SLEEP_TIME);
 					count_step++; //Revisar si esto está bien o es mejor ponerlo fuera del for para que cuente vueltasy no cada paso
 				}
-//
-//
-// 			//ret = gpio_pin_toggle_dt(&led);
-// 			//if (ret < 0) {
-// 			//	return;
-// 			//}
+
+
+			//ret = gpio_pin_toggle_dt(&led);
+			//if (ret < 0) {
+			//	return;
+			//}
 		}
-//
-// 		k_msleep(5*SLEEP_TIME);
+
+		k_msleep(5*SLEEP_TIME);
 		count_step=0;
 
-}
-// 	else{
-// 		llego = 0;
-//
-// 		// return;							/* Esto también ni idea, lo puse porque quedaba lendo*/
-//   }
-
-  k_msleep(10*SLEEP_TIME);
-	// printk("Llego=%d\n", llego);
+	}
+	else{
+		llego = 0;
+		// return;							/* Esto también ni idea, lo puse porque quedaba lendo*/
+	}
+	printk("Llego=%d\n", llego);
 }
 }
