@@ -2559,6 +2559,7 @@ int drawable design_ic_visibility 0x7f07007d
 int drawable design_ic_visibility_off 0x7f07007e
 int drawable design_password_eye 0x7f07007f
 int drawable design_snackbar_background 0x7f070080
+int drawable diego 0x7f0700dc
 int drawable eduardo 0x7f0700d7
 int drawable exit 0x7f0700d4
 int drawable ic_clock_black_24dp 0x7f070081
@@ -2572,6 +2573,7 @@ int drawable ic_mtrl_checked_circle 0x7f070088
 int drawable ic_mtrl_chip_checked_black 0x7f070089
 int drawable ic_mtrl_chip_checked_circle 0x7f07008a
 int drawable ic_mtrl_chip_close_circle 0x7f07008b
+int drawable jonny 0x7f0700db
 int drawable logo 0x7f0700d5
 int drawable m3_appbar_background 0x7f07008c
 int drawable m3_popupmenu_background_overlay 0x7f07008d
@@ -2643,6 +2645,7 @@ int drawable notification_tile_bg 0x7f0700ce
 int drawable notify_panel_notification_icon_bg 0x7f0700cf
 int drawable raulandres 0x7f0700d9
 int drawable round_button 0x7f0700d3
+int drawable sergio 0x7f0700da
 int drawable test_level_drawable 0x7f0700d0
 int drawable tooltip_frame_dark 0x7f0700d1
 int drawable tooltip_frame_light 0x7f0700d2
@@ -2662,11 +2665,15 @@ int id BtUpdateUser 0x7f0801ff
 int id ButtonBackInsert 0x7f0801e5
 int id ButtonBackScanner 0x7f0801e6
 int id ButtonBackUs 0x7f0801e7
+int id ButtonCancel 0x7f080205
+int id ButtonClaim 0x7f080206
+int id ButtonSearch 0x7f080207
 int id CTRL 0x7f080003
 int id Config 0x7f0801ed
 int id DBDrugs 0x7f080200
 int id DBUsers 0x7f0801f7
 int id Diego 0x7f0801e8
+int id Drug 0x7f080208
 int id DrugsCount 0x7f080201
 int id DrugsId 0x7f080202
 int id DrugsName 0x7f080203
@@ -2675,9 +2682,13 @@ int id Exit 0x7f0801e2
 int id FUNCTION 0x7f080004
 int id InsertDocument 0x7f0801dc
 int id Jonny 0x7f0801ea
+int id LastName 0x7f080209
+int id Login 0x7f08020b
 int id META 0x7f080005
 int id MainTitle 0x7f0801dd
 int id NO_DEBUG 0x7f080006
+int id Name 0x7f08020a
+int id Password 0x7f08020c
 int id Raul 0x7f0801eb
 int id SHIFT 0x7f080007
 int id SHOW_ALL 0x7f080008
@@ -2693,6 +2704,7 @@ int id UserId 0x7f0801f3
 int id UserLastName 0x7f0801f4
 int id UserName 0x7f0801f5
 int id Users 0x7f0801de
+int id Usuario 0x7f08020d
 int id accelerate 0x7f08000e
 int id accessibility_action_clickable_span 0x7f08000f
 int id accessibility_custom_action_0 0x7f080010
@@ -3280,6 +3292,7 @@ int layout abc_tooltip 0x7f0b001b
 int layout activity_about_us 0x7f0b0069
 int layout activity_config_db 0x7f0b006a
 int layout activity_inser_document 0x7f0b0067
+int layout activity_login 0x7f0b006b
 int layout activity_main 0x7f0b001c
 int layout activity_scanner_document 0x7f0b0068
 int layout custom_dialog 0x7f0b001d

@@ -2560,6 +2560,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable diego
 drawable eduardo
 drawable exit
 drawable ic_clock_black_24dp
@@ -2573,6 +2574,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable jonny
 drawable logo
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -2644,6 +2646,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable raulandres
 drawable round_button
+drawable sergio
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -2663,11 +2666,15 @@ id BtUpdateUser
 id ButtonBackInsert
 id ButtonBackScanner
 id ButtonBackUs
+id ButtonCancel
+id ButtonClaim
+id ButtonSearch
 id CTRL
 id Config
 id DBDrugs
 id DBUsers
 id Diego
+id Drug
 id DrugsCount
 id DrugsId
 id DrugsName
@@ -2676,9 +2683,13 @@ id Exit
 id FUNCTION
 id InsertDocument
 id Jonny
+id LastName
+id Login
 id META
 id MainTitle
 id NO_DEBUG
+id Name
+id Password
 id Raul
 id SHIFT
 id SHOW_ALL
@@ -2694,6 +2705,7 @@ id UserId
 id UserLastName
 id UserName
 id Users
+id Usuario
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3281,6 +3293,7 @@ layout abc_tooltip
 layout activity_about_us
 layout activity_config_db
 layout activity_inser_document
+layout activity_login
 layout activity_main
 layout activity_scanner_document
 layout custom_dialog
