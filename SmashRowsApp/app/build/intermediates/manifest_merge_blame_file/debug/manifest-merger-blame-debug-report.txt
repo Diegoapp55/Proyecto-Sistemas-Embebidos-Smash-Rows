@@ -11,7 +11,7 @@
 9-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:5:5-56:19
+11-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:5:5-63:19
 12        android:allowBackup="true"
 12-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -34,8 +34,8 @@
 22-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:13:9-47
 23        <activity
 23-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:15:9-21:20
-24            android:name="com.example.smashrows.ConfigDB"
-24-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:16:13-37
+24            android:name="com.example.smashrows.Login"
+24-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:16:13-34
 25            android:exported="false" >
 25-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:17:13-37
 26            <meta-data
@@ -47,8 +47,8 @@
 29        </activity>
 30        <activity
 30-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:22:9-28:20
-31            android:name="com.example.smashrows.AboutUs"
-31-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:23:13-36
+31            android:name="com.example.smashrows.ConfigDB"
+31-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:23:13-37
 32            android:exported="false" >
 32-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:24:13-37
 33            <meta-data
@@ -60,8 +60,8 @@
 36        </activity>
 37        <activity
 37-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:29:9-35:20
-38            android:name="com.example.smashrows.ScannerDocument"
-38-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:30:13-44
+38            android:name="com.example.smashrows.AboutUs"
+38-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:30:13-36
 39            android:exported="false" >
 39-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:31:13-37
 40            <meta-data
@@ -73,8 +73,8 @@
 43        </activity>
 44        <activity
 44-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:36:9-42:20
-45            android:name="com.example.smashrows.InserDocument"
-45-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:37:13-42
+45            android:name="com.example.smashrows.ScannerDocument"
+45-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:37:13-44
 46            android:exported="false" >
 46-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:38:13-37
 47            <meta-data
@@ -85,51 +85,64 @@
 49-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:20:17-33
 50        </activity>
 51        <activity
-51-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:43:9-55:20
-52            android:name="com.example.smashrows.MainActivity"
-52-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:44:13-41
-53            android:exported="true" >
-53-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:45:13-36
-54            <intent-filter>
-54-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:46:13-50:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:47:17-69
-55-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:47:25-66
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-57-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:49:17-77
-57-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:49:27-74
-58            </intent-filter>
-59
-60            <meta-data
-60-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:18:13-20:36
-61                android:name="android.app.lib_name"
-61-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:19:17-52
-62                android:value="" />
-62-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:20:17-33
-63        </activity>
-64
-65        <provider
-65-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-66            android:name="androidx.startup.InitializationProvider"
-66-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-67            android:authorities="com.example.smashrows.androidx-startup"
-67-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-68            android:exported="false" >
-68-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-69            <meta-data
-69-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-70-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-71                android:value="androidx.startup" />
-71-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-72            <meta-data
-72-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/etorob/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-73-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/etorob/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-74                android:value="androidx.startup" />
-74-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/etorob/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-75        </provider>
-76    </application>
-77
-78</manifest>
+51-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:43:9-49:20
+52            android:name="com.example.smashrows.InserDocument"
+52-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:44:13-42
+53            android:exported="false" >
+53-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:45:13-37
+54            <meta-data
+54-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:18:13-20:36
+55                android:name="android.app.lib_name"
+55-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:19:17-52
+56                android:value="" />
+56-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:20:17-33
+57        </activity>
+58        <activity
+58-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:50:9-62:20
+59            android:name="com.example.smashrows.MainActivity"
+59-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:51:13-41
+60            android:exported="true" >
+60-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:52:13-36
+61            <intent-filter>
+61-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:53:13-57:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:54:17-69
+62-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:54:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:56:17-77
+64-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:56:27-74
+65            </intent-filter>
+66
+67            <meta-data
+67-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:18:13-20:36
+68                android:name="android.app.lib_name"
+68-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:19:17-52
+69                android:value="" />
+69-->/home/etorob/Documentos/GitHub/Proyecto-Sistemas-Embebidos-Smash-Rows/SmashRowsApp/app/src/main/AndroidManifest.xml:20:17-33
+70        </activity>
+71
+72        <provider
+72-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+73            android:name="androidx.startup.InitializationProvider"
+73-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+74            android:authorities="com.example.smashrows.androidx-startup"
+74-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+75            android:exported="false" >
+75-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+76            <meta-data
+76-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+77-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+78                android:value="androidx.startup" />
+78-->[androidx.emoji2:emoji2:1.2.0] /home/etorob/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+79            <meta-data
+79-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/etorob/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+80-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/etorob/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+81                android:value="androidx.startup" />
+81-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/etorob/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+82        </provider>
+83    </application>
+84
+85</manifest>

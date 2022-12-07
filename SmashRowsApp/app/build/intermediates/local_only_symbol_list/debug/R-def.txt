@@ -14,9 +14,11 @@ drawable eduardo
 drawable exit
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable jonny
 drawable logo
 drawable raulandres
 drawable round_button
+drawable sergio
 font comic_neue_bold_italic
 id AboutUs
 id BtDeleteDrugs
@@ -46,8 +48,10 @@ id Exit
 id InsertDocument
 id Jonny
 id LastName
+id Login
 id MainTitle
 id Name
+id Password
 id Raul
 id Scanner
 id Sergio
@@ -56,9 +60,11 @@ id UserId
 id UserLastName
 id UserName
 id Users
+id Usuario
 layout activity_about_us
 layout activity_config_db
 layout activity_inser_document
+layout activity_login
 layout activity_main
 layout activity_scanner_document
 mipmap ic_launcher
