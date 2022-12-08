@@ -66,7 +66,7 @@ static const struct gpio_dt_spec rfid0 = GPIO_DT_SPEC_GET(RFID_NODE, gpios);
 
 int leerTabla(int paso[], int posicion){
 	int lectura = paso[posicion];
-  printf("prueba2\n");
+  // printf("prueba2\n");
 	return lectura;
 }
 
@@ -267,7 +267,7 @@ void main(void)
 // 		// return;							/* Esto también ni idea, lo puse porque quedaba lendo*/
 //   }
 
-  k_msleep(10*SLEEP_TIME);
+  //k_msleep(10*SLEEP_TIME);
 	// printk("Llego=%d\n", llego);
 }
 }

@@ -102,7 +102,7 @@ void main(void)
 	int round_step = 4076;
 
 
-	const int numberSteps = 3200;
+	const int numberSteps = 2600;
 	const int tableSteps[4] = {0x8, 0x4, 0x2, 0x1};
 
 	/*Lo del blink para depurar*/
@@ -131,7 +131,7 @@ void main(void)
 		llego = 1;
 
 
-		while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
+		while (count_step<numberSteps-100) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
 			// ret = gpio_pin_set_dt(&coil1, 1/0)
 			// Cambio el valor de los pines coilX
 				for (int i = 0; i < 4; i++) {
@@ -175,7 +175,7 @@ void main(void)
 	k_msleep(5*SLEEP_TIME);
 	count_step=0;
 
-		while (count_step<numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
+		while (count_step<2*numberSteps) { //En vez de 1 poner señal de control que se active con la orden de dispensar y se apague hasta que lo haga
 			// ret = gpio_pin_set_dt(&coil1, 1/0)
 			// Cambio el valor de los pines coilX
 				for (int i = 0; i < 4; i++) {
